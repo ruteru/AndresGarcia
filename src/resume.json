@@ -1,0 +1,44 @@
+{
+  "name": "Andres Garcia",
+  "title": "Software Developer",
+  "location": "Buenos Aires, Argentina",
+  "email": "garcicon45@gmail.com",
+  "phone": "+5491124697598",
+  "github": "https://github.com/ruteru",
+  "linkedin": "https://www.linkedin.com/in/andres-garcia-ing/",
+  "skills": {
+    "topSkills": ["problem solving", "hard thinking", "expertise"],
+    "programmingLanguages": ["python", "javascript", "golang"],
+    "favoriteFrameworks": ["React", "fastapi", "tensorflow"]
+  },
+  "work": [
+    {
+      "title": "Machine Learning Developer",
+      "company": "Dapps Factory",
+      "companyUrl": "https://dappsfactory.io/",
+      "date": "2024/02 - 2024/04",
+      "details": "I am a software developer working in the Dapps Factory team."
+    },
+    {
+      "title": "Fullstack Developer",
+      "company": "iMCreate",
+      "companyUrl": "https://imcreatestudios.com/",
+      "date": "2023/11 - 2023/12",
+      "details": "I am a software developer working in the iMCreate team."
+    },
+    {
+      "title": "Backend Developer",
+      "company": "Appen",
+      "companyUrl": "https://www.appen.com/",
+      "date": "2020/09 - 2023/08",
+      "details": "I am a software developer working in the Appen team."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Università degli studi di Milano",
+      "degree": "Bachelor of Computer Science",
+      "date": "2020/09 - Present"
+    }
+  ]
+}

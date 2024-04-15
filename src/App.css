@@ -1,0 +1,308 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #f7e8e8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(40, 40, 40);
+}
+
+.App-body {
+  background-color: #f7e8e8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(40, 40, 40);
+  z-index: 1;
+  position: relative;
+  overflow-y: auto;
+}
+
+.contact-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #282c34a0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  overflow-y: auto;
+}
+
+menubar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 35px;
+  background-color: #171717c0;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  z-index: 3;
+}
+
+button {
+  border-radius: 25px;
+  background-color: #f7e8e8;
+  border: none;
+  color: rgb(40, 40, 40);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.profile {
+  margin-top: 100px;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.square {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  padding: auto;
+  background-color: #000000cc;
+  color: #dcdcdc;
+  width: 300px;
+  height: 500px;
+  font-size: 30px;
+  border-radius: 25px;
+  text-align: left ;
+  padding-left: 20px;
+}
+
+.contact-square {
+  margin-top: 100px;
+  margin-bottom: auto;
+  margin-left: 20px;
+  padding: auto;
+  background-color: #242424;
+  color: #dcdcdc;
+  width: 500px;
+  height: 450px;
+  font-size: 30px;
+  border-radius: 25px;
+  text-align: left ;
+  padding-left: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 5;
+  font-size: 20px;
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icon-button-email {
+  width: 40px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-image: url('https://i.pinimg.com/originals/23/da/b9/23dab92cbddac8b9ae00db6dd345644d.png');
+  background-size: 99%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-button-email:hover {
+  background-color: rgba(23, 23, 23, 0.637);
+}
+
+.icon-button-whatsapp {
+  width: 40px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-image: url('https://pngimg.com/d/whatsapp_PNG21.png');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-button-whatsapp:hover {
+  background-color: rgba(23, 23, 23, 0.637);
+}
+
+.icon-button-linkedin {
+  width: 40px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png');
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-button-linkedin:hover {
+  background-color: rgba(23, 23, 23, 0.637);
+}
+
+.icon-button-github {
+  width: 40px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-image: url('https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-button-github:hover {
+  background-color: rgba(179, 179, 179, 0.436);
+}
+
+.icon-button-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.downloadFiles {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  padding: auto;
+  background-color: #000000cc;
+  color: #dcdcdc;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 25px;
+  text-align: left ;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.contact-screen,
+.download-screen {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000000cc;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.WorkExperience {
+  margin-top: 20px;
+  margin-bottom: auto;
+  margin-left: 20px;
+  padding: auto;
+  background-color: transparent;
+  color: #dcdcdc;
+  width: 800px;
+  height: 400px;
+  font-size: 20px;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  perspective: 1000px; /* Added */
+}
+
+.WorkExperience div {
+  flex: 1;
+  margin-right: 10px;
+  padding: 20px;
+  background-color: #000000cc;
+  border-radius: 10px;
+  transition: opacity 1s ease;
+  opacity: 0;
+  transform-style: preserve-3d; /* Added */
+  position: relative; /* Added */
+}
+
+.WorkExperience div.active {
+  opacity: 1;
+  transform: rotateY(0deg); /* Added */
+  z-index: 1; /* Added */
+}
+
+.WorkExperience div {
+  animation: rotateCard 5s linear infinite; /* Added */
+}
