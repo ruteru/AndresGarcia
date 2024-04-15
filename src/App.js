@@ -170,7 +170,7 @@ function App() {
           ))}
 
         <footer>
-            <img src='https://media.licdn.com/dms/image/D4D03AQGppir9pFGBYQ/profile-displayphoto-shrink_400_400/0/1713109771866?e=1718841600&v=beta&t=y8ZgVHOgJj75u-zkYNT8qET7uuWuljI5ZsNh0YTzFYU' alt='' className='profile'></img>
+            <img src='https://media.licdn.com/dms/image/D4D03AQEKwF_QJ94mLw/profile-displayphoto-shrink_400_400/0/1713109803593?e=1718841600&v=beta&t=uzVc_eXxE6bh6omlk5L0Ro5K8VMWy7sajOM_Be8Zo18' alt='' className='profile'></img>
             <p>© {new Date().getFullYear()} {resumeData.name} All rights reserved.</p>
         </footer>
         
