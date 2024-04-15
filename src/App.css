@@ -70,6 +70,8 @@ menubar {
   margin-bottom: 20px;
   font-size: 20px;
   z-index: 3;
+  display: flex; 
+  justify-content: flex-end;
 }
 
 button {
@@ -84,6 +86,17 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 5;
+  font-size: 20px;
+  text-align: left;
 }
 
 .profile {
@@ -120,18 +133,6 @@ button {
   font-size: 30px;
   border-radius: 25px;
   text-align: left ;
-  padding-left: 20px;
-}
-
-p {
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  padding: 5;
-  font-size: 20px;
-  text-align: left;
 }
 
 .grid {
@@ -273,36 +274,34 @@ ul {
   padding: auto;
   background-color: transparent;
   color: #dcdcdc;
+  background-color: #000000cc;
   width: 800px;
   height: 400px;
   font-size: 20px;
   border-radius: 10px;
   text-align: left;
   cursor: pointer;
-  display: flex;
-  overflow: hidden;
   flex-direction: row;
-  perspective: 1000px; /* Added */
 }
 
-.WorkExperience div {
-  flex: 1;
-  margin-right: 10px;
-  padding: 20px;
-  background-color: #000000cc;
-  border-radius: 10px;
-  transition: opacity 1s ease;
-  opacity: 0;
-  transform-style: preserve-3d; /* Added */
-  position: relative; /* Added */
+.devicons {
+  font-size: 90px;
+  margin-top: 20px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
-.WorkExperience div.active {
-  opacity: 1;
-  transform: rotateY(0deg); /* Added */
-  z-index: 1; /* Added */
+.title {
+  padding: 100px;
+  text-align: left;
 }
 
-.WorkExperience div {
-  animation: rotateCard 5s linear infinite; /* Added */
+.sumary {
+  text-align: left;
+  max-width: 500px;
+  margin-bottom: 50px;  
+  text-align: right;
+  font-size: 20px;
 }

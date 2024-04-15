@@ -1,22 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import resumeData from './resume.json';
 import './App.css';
 
 function App() {
   const { skills } = resumeData;
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex === resumeData.work.length - 1 ? 0 : prevIndex + 1));
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-    
   const [showContactScreen, setShowContactScreen] = useState(false);
   const [showDownloadScreen, setShowDownloadScreen] = useState(false);
-
 
   const handleContactButtonClick = () => {
     setShowContactScreen(!showContactScreen);
@@ -95,13 +84,18 @@ function App() {
           <button onClick={handleDownloadButtonClick}>Download Resume</button>
           <button onClick={handleContactButtonClick}>Contact me</button>
         </menubar>
-        <img src='https://media.licdn.com/dms/image/D4D03AQGppir9pFGBYQ/profile-displayphoto-shrink_400_400/0/1713109771866?e=1718841600&v=beta&t=y8ZgVHOgJj75u-zkYNT8qET7uuWuljI5ZsNh0YTzFYU' alt='' className='profile'></img>
-        <h1>Welcome to my profile!</h1>
-        <p>My name is {resumeData.name}</p>
+        <h1 className='title'>Welcome to my profile! <br></br> My name is {resumeData.name}</h1>
+        <div className='devicons'>
+          <i class="devicon-python-plain-wordmark"></i>
+          <i class="devicon-javascript-plain"></i>
+          <i class="devicon-react-original-wordmark"></i>
+          <i class="devicon-fastapi-plain"></i>
+        </div>
+        <p className='sumary'>{resumeData.sumary}</p>
 
-        <h2>Here are some of my skills</h2>
+        <h2 style={{ padding: '30px', marginTop: '10px' }}>Here are some of my skills</h2>
         <div className='grid'> 
-          <div className='square'> <p>Top skills</p>
+          <div className='square'> <p>Soft Skills</p>
             <ul>
                 {skills.topSkills.map((skill, index) => (
                   <li key={index}>{skill}</li>
@@ -165,9 +159,8 @@ function App() {
           </div>
         )}
         <h3>Work Experience</h3> 
-        <div className='WorkExperience'>
           {resumeData.work.map((work, index) => (
-            <div key={index} className={index === activeIndex ? 'active' : ''}>
+            <div className='WorkExperience'>
               <p>{work.title}</p>
               <p>{work.company}</p>
               <p>{work.date}</p>
@@ -175,12 +168,12 @@ function App() {
               <p>{work.companyUrl}</p>
             </div>
           ))}
-        </div>
 
-
-        <div className="footer">
-          <p>© {new Date().getFullYear()} {resumeData.name} All rights reserved.</p>
-        </div>
+        <footer>
+            <img src='https://media.licdn.com/dms/image/D4D03AQGppir9pFGBYQ/profile-displayphoto-shrink_400_400/0/1713109771866?e=1718841600&v=beta&t=y8ZgVHOgJj75u-zkYNT8qET7uuWuljI5ZsNh0YTzFYU' alt='' className='profile'></img>
+            <p>© {new Date().getFullYear()} {resumeData.name} All rights reserved.</p>
+        </footer>
+        
       </div>
     </body>
   );

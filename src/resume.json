@@ -1,15 +1,16 @@
 {
   "name": "Andres Garcia",
   "title": "Software Developer",
+  "sumary": "I'm a Fullstack software engineer with experience in data science, algorithms,  and machine learning, along with  proficiency in cloud, I'm well- versed in  project management and CI/CD  lifecycles, ensuring efficient and  successful outcomes.  What sets me apart is my dedication to  effective communication and  collaboration, ensuring a nice approach  to solving complex technical challenges.",
   "location": "Buenos Aires, Argentina",
   "email": "garcicon45@gmail.com",
   "phone": "+5491124697598",
   "github": "https://github.com/ruteru",
   "linkedin": "https://www.linkedin.com/in/andres-garcia-ing/",
   "skills": {
-    "topSkills": ["problem solving", "hard thinking", "expertise"],
-    "programmingLanguages": ["python", "javascript", "golang"],
-    "favoriteFrameworks": ["React", "fastapi", "tensorflow"]
+    "topSkills": ["problem solving", "Communication", "Teamwork", "Time Management"],
+    "programmingLanguages": ["Python", "Javascript", "HTML", "CSS", "Golang"],
+    "favoriteFrameworks": ["React", "Fastapi", "Tensorflow", "Next.JS", "Express.JS"]
   },
   "work": [
     {
