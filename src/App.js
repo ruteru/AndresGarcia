@@ -128,7 +128,7 @@ function App() {
         {showContactScreen && (
           <div className="contact-screen">
             <div className='contact-square'>
-              <h2>Contact Me</h2>
+              <h2 style={{ textAlign: 'center' }}>Contact Me</h2>
               <p>You can contact me through:</p>
               <ul>
                 <div className='icon-button-socials'>
@@ -143,7 +143,7 @@ function App() {
                   Phone: {resumeData.phone} 
                 </li>
               </ul>
-              <button onClick={handleContactButtonClick}>Back</button>
+              <button style={{ float: 'right', marginRight: '20px' }} onClick={handleContactButtonClick}>Back</button>
             </div>
           </div>
         )}
@@ -151,7 +151,7 @@ function App() {
         {showDownloadScreen && (
           <div className="contact-screen">
             <div className='contact-square'>
-              <h2>Download Resume</h2>
+              <h2 style={{ textAlign: 'center' }}>Download Resume</h2>
               <p>You can download my resume through:</p>
               <ul>
                 <div className='icon-button-socials'>
@@ -160,7 +160,7 @@ function App() {
                   <button onClick={downloadHtml} className='icon-button-download'>Download as HTML</button>
                 </div>
               </ul>
-              <button onClick={handleDownloadButtonClick}>Back</button>
+              <button style={{ float: 'right', marginRight: '20px' }} onClick={handleDownloadButtonClick}>Back</button>
             </div>
           </div>
         )}
