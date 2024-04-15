@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import resumeData from './resume.json';
+import resumeData from '../resume.json';
+import Logos from '../components/logos';
 import './App.css';
 
 function App() {
@@ -56,7 +57,7 @@ function App() {
   };
 
   const downloadPdf = () => {
-    const pdfFile = require('./assets/AndresGarcia.pdf');
+    const pdfFile = require('../assets/AndresGarcia.pdf');
     const blob = new Blob([pdfFile], { type: 'application/pdf' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -92,7 +93,9 @@ function App() {
           <i class="devicon-fastapi-plain"></i>
           <p className='sumary'>{resumeData.sumary}</p>
         </div>
-
+        
+        <strong className='myApps'>I am a {resumeData.title} and I inspire in these apps</strong>
+        <Logos />
         <h2 style={{ padding: '30px', marginTop: '10px' }}>Here are some of my skills</h2>
         <div className='grid'> 
           <div className='square'> <p>Soft Skills</p>
@@ -146,28 +149,32 @@ function App() {
           <div className="contact-screen">
             <div className='contact-square'>
               <h2 style={{ textAlign: 'center' }}>Download Resume</h2>
-              <p>You can download my resume through:</p>
               <ul>
-                <div className='icon-button-socials'>
-                  <button onClick={downloadPdf} className='icon-button-download'>Download as PDF</button>
-                  <button onClick={downloadJson} className='icon-button-download'>Download as JSON</button>
-                  <button onClick={downloadHtml} className='icon-button-download'>Download as HTML</button>
+                <div className='icon-button-download'>
+                  <button onClick={downloadPdf}>Download as PDF</button>
+                  <button onClick={downloadJson}>Download as JSON</button>
+                  <button onClick={downloadHtml}>Download as HTML</button>
                 </div>
               </ul>
-              <button style={{ float: 'right', marginRight: '20px' }} onClick={handleDownloadButtonClick}>Back</button>
+              <button className='backDownload' onClick={handleDownloadButtonClick}>Back</button>
             </div>
           </div>
         )}
+          
         <h3>Work Experience</h3> 
-          {resumeData.work.map((work, index) => (
-            <div className='WorkExperience'>
-              <p>{work.title}</p>
-              <p>{work.company}</p>
-              <p>{work.date}</p>
-              <p>{work.details}</p>
-              <p>{work.companyUrl}</p>
-            </div>
+        <div className='workContainer'>
+          {resumeData.work.map((work) => (
+          <div className='workSection'>
+            <p>{work.title}</p>
+            <p>{work.company}</p>
+            <p>{work.date}</p>
+            <p>{work.details}</p>
+            <p>{work.companyUrl}</p>
+          </div>
           ))}
+        </div>
+        
+        
 
         <footer>
             <img src='https://media.licdn.com/dms/image/D4D03AQEKwF_QJ94mLw/profile-displayphoto-shrink_400_400/0/1713109803593?e=1718841600&v=beta&t=uzVc_eXxE6bh6omlk5L0Ro5K8VMWy7sajOM_Be8Zo18' alt='' className='profile'></img>
