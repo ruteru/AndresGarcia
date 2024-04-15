@@ -90,8 +90,8 @@ function App() {
           <i class="devicon-javascript-plain"></i>
           <i class="devicon-react-original-wordmark"></i>
           <i class="devicon-fastapi-plain"></i>
+          <p className='sumary'>{resumeData.sumary}</p>
         </div>
-        <p className='sumary'>{resumeData.sumary}</p>
 
         <h2 style={{ padding: '30px', marginTop: '10px' }}>Here are some of my skills</h2>
         <div className='grid'> 
@@ -171,6 +171,7 @@ function App() {
 
         <footer>
             <img src='https://media.licdn.com/dms/image/D4D03AQEKwF_QJ94mLw/profile-displayphoto-shrink_400_400/0/1713109803593?e=1718841600&v=beta&t=uzVc_eXxE6bh6omlk5L0Ro5K8VMWy7sajOM_Be8Zo18' alt='' className='profile'></img>
+            <p>This repository is open source and inspired by <a href="https://tsuramii.github.io/online-cv/">@tsuramii's online CV</a>.</p>
             <p>© {new Date().getFullYear()} {resumeData.name} All rights reserved.</p>
         </footer>
         

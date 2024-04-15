@@ -299,9 +299,11 @@ ul {
 }
 
 .sumary {
-  text-align: left;
+  top: auto;
+  margin-left: 50px;
+  text-align: right;
+  align-items: top;
   max-width: 500px;
-  margin-bottom: 50px;  
   text-align: right;
   font-size: 20px;
 }
