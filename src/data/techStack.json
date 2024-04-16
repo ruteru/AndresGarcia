@@ -1,9 +1,51 @@
 {
-    "databases": ["postgres", "mysql", "mongodb", "pineconedb", "mariadb", "sqlite", "sqlalchemy"],
-    "programingLanguages": ["python", "javascrip", "golang", "HTML", "CSS", "sql", "bash"],
-    "frameworks": ["react", "nextJS", "ExpressJS", "Fastapi", "Tensorflow", "Django", "folium"],
-    "cloud": ["aws", "gcp", "firebase", "hasura", "vercel", "netlify", "render", "heroku"],
-    "tools": ["docker", "kubernetes", "postman", "thunder client", "git", "github"],
-    "hardskills": ["CI/CD", "DevOps", "Machine Learning", "AI"],
-    "softskills": ["communication", "teamwork", "time management", "problem solving", ""]
-}
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "icons": {
+        "databases":{
+            "postgres":[true, "<i class=\"devicon-postgresql-plain\"></i>"],
+            "mysql":[true, "<i class=\"devicon-mysql-original\"></i>"],
+            "mongodb":[true, "<i class=\"devicon-mongodb-plain\"></i>"],
+            "mariadb":[true, "<i class=\"devicon-mariadb-original\"></i>"],
+            "sqlite":[true, "<i class=\"devicon-sqlite-plain\"></i>"],
+            "sqlalchemy":[true, "<i class=\"devicon-sqlalchemy-plain\"></i>"]
+        },
+        "programingLanguages":{
+            "python":[true,"<i class=\"devicon-python-plain\"></i>"],
+            "javascript":[true, "<i class=\"devicon-javascript-plain\"></i>"],
+            "golang":[false, "<i class=\"devicon-go-original-wordmark\"></i>"],
+            "JSON":[false, "<i class=\"devicon-json-plain\"></i>"],
+            "HTML":[true, "<i class=\"devicon-html5-plain\"></i>"],
+            "CSS":[true, "<i class=\"devicon-css3-plain\"></i>"],
+            "sql":[true, "<i class=\"devicon-azuresqldatabase-plain\"></i>"],
+            "bash":[true, "<i class=\"devicon-bash-plain\"></i>"]
+        },
+        "frameworks":{
+            "react":[true, "<i class=\"devicon-react-original\"></i>"],
+            "nextJS":[true, "<i class=\"devicon-nextjs-original-wordmark\"></i>"],
+            "ExpressJS":[true, "<i class=\"devicon-express-original\"></i>"],
+            "Fastapi":[true, "<i class=\"devicon-fastapi-plain\"></i>"],
+            "Keras":[true, "<i class=\"devicon-keras-plain-wordmark\"></i>"],
+            "Django":[true, "<i class=\"devicon-django-plain\"></i>"],
+            "Pandas":[true, "<i class=\"devicon-pandas-plain-wordmark\"></i>"]
+        },
+        "cloud":{
+            "aws":[true, "<i class=\"devicon-amazonwebservices-plain-wordmark\"></i>"],
+            "gcp":[true, "<i class=\"devicon-googlecloud-plain\"></i>"],
+            "firebase":[true, "<i class=\"devicon-firebase-plain\"></i>"],
+            "cloudflare":[true, "<i class=\"devicon-cloudflare-plain\"></i>"],
+            "Heroku":[true, "<i class=\"devicon-heroku-plain-wordmark\"></i>"],
+            "vercel":[true, "<i class=\"devicon-vercel-plain\"></i>"],
+            "netlify":[true, "<i class=\"devicon-netlify-plain\"></i>"],
+            "bitbucket":[true, "<i class=\"devicon-bitbucket-original-wordmark\"></i>"]
+        },
+        "tools":{
+            "docker":[true, "<i class=\"devicon-docker-plain\"></i>"],
+            "kubernetes":[true, "<i class=\"devicon-kubernetes-plain\"></i>"],
+            "postman":[true, "<i class=\"devicon-postman-plain\"></i>"],
+            "figma":[true, "<i class=\"devicon-figma-plain\"></i>"],
+            "git":[true, "<i class=\"devicon-git-plain\"></i>"],
+            "github":[true, "<i class=\"devicon-github-original\"></i>"],
+            "Github Actions":[true, "<i class=\"devicon-githubactions-plain\"></i>"]
+        }
+    }
+  }

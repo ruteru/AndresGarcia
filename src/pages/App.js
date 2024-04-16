@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import resumeData from '../resume.json';
 import Logo from '../components/logosBool';
 import AppsData from '../data/myApps.json';
+import LogosTech from '../components/logosTech';
+import techData from '../data/techStack.json';
 import './App.css';
 
 function App() {
@@ -103,31 +105,24 @@ function App() {
         <strong className='myApps'>I am a {resumeData.title} and I inspire in these apps</strong>
         <Logo logosData={AppsData} numSlides={3}/>
         <h2 style={{ padding: '30px', marginTop: '10px' }}>Here are some of my skills</h2>
-        <div className='grid'> 
-          <div className='square'> <p>Soft Skills</p>
-            <ul>
-                {skills.topSkills.map((skill, index) => (
-                  <li key={index}>{skill}</li>
-                ))}
-            </ul>
-          </div>
+        
+        <h3>Databases</h3>
+        <LogosTech logosData={techData} numSlides={3} filter="databases"/>
 
-          <div className='square'> <p>Programming Languages</p>
-            <ul>
-                {skills.programmingLanguages.map((language, index) => (
-                  <li key={index}>{language}</li>
-                ))}
-            </ul>
-          </div>
+        <h3>Programing Languages</h3>
+        <LogosTech logosData={techData} numSlides={3} filter="programingLanguages"/>
 
-          <div className='square'> <p>Favorite Frameworks</p>
-            <ul>
-                {skills.favoriteFrameworks.map((framework, index) => (
-                  <li key={index}>{framework}</li>
-                ))}
-            </ul>
-          </div>
-        </div>
+        <h3>Favorite Frameworks</h3>
+        <LogosTech logosData={techData} numSlides={3} filter="frameworks"/>
+
+        <h3>Cloud Services</h3>
+        <LogosTech logosData={techData} numSlides={3} filter="cloud"/>
+
+        <h3>Tools</h3>
+        <LogosTech logosData={techData} numSlides={3} filter="tools"/>
+
+
+
         {showContactScreen && (
           <div className="contact-screen">
             <div className='contact-square'>

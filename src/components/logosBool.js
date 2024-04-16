@@ -14,7 +14,10 @@ class Logos extends React.Component {
       logosSlides.push(
         <div className="logos-slide" key={i}>
           {filteredLogosData.map((logo, index) => (
-            <img alt={logo.alt} src={logo.src} key={index} />
+            <div className="logo-container" key={index}>
+              <img alt={logo.alt} src={logo.src} />
+              <div className="alt-text">{logo.alt}</div>
+            </div>
           ))}
         </div>
       );
