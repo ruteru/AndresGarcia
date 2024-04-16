@@ -1,0 +1,9 @@
+{
+    "databases": ["postgres", "mysql", "mongodb", "pineconedb", "mariadb", "sqlite", "sqlalchemy"],
+    "programingLanguages": ["python", "javascrip", "golang", "HTML", "CSS", "sql", "bash"],
+    "frameworks": ["react", "nextJS", "ExpressJS", "Fastapi", "Tensorflow", "Django", "folium"],
+    "cloud": ["aws", "gcp", "firebase", "hasura", "vercel", "netlify", "render", "heroku"],
+    "tools": ["docker", "kubernetes", "postman", "thunder client", "git", "github"],
+    "hardskills": ["CI/CD", "DevOps", "Machine Learning", "AI"],
+    "softskills": ["communication", "teamwork", "time management", "problem solving", ""]
+}
