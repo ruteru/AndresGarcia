@@ -159,7 +159,7 @@ function App() {
                   Phone: {resumeData.phone} 
                 </li>
               </ul>
-              <button className='backDownload' onClick={handleContactButtonClick}>Back</button>
+              <button className='backButton' onClick={handleContactButtonClick}>Back</button>
             </div>
           </div>
         )}
@@ -175,7 +175,7 @@ function App() {
                   <button onClick={downloadHtml}>Download as HTML</button>
                 </div>
               </ul>
-              <button className='backDownload' onClick={handleDownloadButtonClick}>Back</button>
+              <button className='backButton' onClick={handleDownloadButtonClick}>Back</button>
             </div>
           </div>
         )}

@@ -166,10 +166,10 @@ a {
   margin-top: 20px;
 }
 
-.backDownload {
+.backButton {
   position: absolute;
-  bottom: 30px;
-  right: 40px;
+  bottom: 40px;
+  right: 370px;
 }
 
 .contact-square button {
