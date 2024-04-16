@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // Read the resume.json file
-const resumeData = require('./resume.json');
+const resumeData = require('./src/data/resume.json');
 
 // Extract the name from resume.json
 const name = resumeData.name;
