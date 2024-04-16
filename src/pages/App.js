@@ -103,27 +103,43 @@ function App() {
         </div>
         
         <strong className='myApps'>I am a {resumeData.title} and I inspire in these apps</strong>
-        <Logo logosData={AppsData} numSlides={3}/>
+        <Logo style={{ maxWidth: '1000px' }} logosData={AppsData} numSlides={3}/>
         <h2 style={{ padding: '30px', marginTop: '10px' }}>Here are some of my skills</h2>
         
-        <h3>Databases</h3>
-        <LogosTech logosData={techData} numSlides={3} filter="databases"/>
+        <div className='grid-cube'>
+          
+          <div className='cube'>
+            <h3>Databases</h3>
+            <LogosTech logosData={techData} numSlides={3} filter="databases"/>
+          </div>
 
-        <h3>Programing Languages</h3>
-        <LogosTech logosData={techData} numSlides={3} filter="programingLanguages"/>
+          <div className='cube'>
+          <h3>Programing Languages</h3>
+          <LogosTech logosData={techData} numSlides={3} filter="programingLanguages"/>
+          </div>
 
-        <h3>Favorite Frameworks</h3>
-        <LogosTech logosData={techData} numSlides={3} filter="frameworks"/>
+          <div className='cube'>
+            <h3>Favorite Frameworks</h3>
+            <LogosTech logosData={techData} numSlides={3} filter="frameworks"/>
+          </div>
 
-        <h3>Cloud Services</h3>
-        <LogosTech logosData={techData} numSlides={3} filter="cloud"/>
+          <div className='cube'>
+            <h3>Cloud Services</h3>
+            <LogosTech logosData={techData} numSlides={3} filter="cloud"/>
+          </div>
 
-        <h3>Tools</h3>
-        <LogosTech logosData={techData} numSlides={3} filter="tools"/>
+          <div className='cube'>
+            <h3>Tools</h3>
+            <LogosTech logosData={techData} numSlides={3} filter="tools"/>
+          </div>
 
-        <h3>Machine Learning and AI</h3>
-        <LogosTech logosData={techData} numSlides={3} filter="ML/AI"/>
+          <div className='cube'>
+            <h3>Machine Learning and AI</h3>
+            <LogosTech logosData={techData} numSlides={3} filter="ML/AI"/>
+          </div>
 
+        </div>
+        
 
         {showContactScreen && (
           <div className="contact-screen">
@@ -168,16 +184,17 @@ function App() {
         <div className='workContainer'>
           {resumeData.work.map((work) => (
           <div className='workSection'>
-            <p>{work.title}</p>
-            <p>{work.company}</p>
+            <br></br>
+            <p>
+              {work.title} at <a href={work.companyUrl} target="_blank" rel="noopener noreferrer">{work.company}</a>
+            </p>
+
             <p>{work.date}</p>
+            <br></br>
             <p>{work.details}</p>
-            <p>{work.companyUrl}</p>
           </div>
           ))}
         </div>
-        
-        
 
         <footer>
             <p>This repository is open source and inspired by <a href="https://tsuramii.github.io/online-cv/">@tsuramii's online CV</a>.</p>

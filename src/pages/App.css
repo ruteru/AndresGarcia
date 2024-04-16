@@ -103,6 +103,13 @@ ul {
   text-align: left;
 }
 
+footer {
+  padding: 30px 20px;
+}
+
+a {
+  color: #61dafb;
+}
 .square {
   margin-top: auto;
   margin-bottom: auto;
@@ -295,19 +302,22 @@ ul {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .workSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 20px;
   margin-bottom: auto;
   margin-left: 20px;
   padding: auto;
-  background-color: transparent;
   color: #dcdcdc;
   background-color: #000000cc;
   height: 350px;
-  max-width: 400px;
+  max-width: 370px;
   font-size: 20px;
   border-radius: 10px;
 }
