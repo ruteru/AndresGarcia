@@ -17,7 +17,7 @@
             "HTML":[true, "<i class=\"devicon-html5-plain\"></i>"],
             "CSS":[true, "<i class=\"devicon-css3-plain\"></i>"],
             "sql":[true, "<i class=\"devicon-azuresqldatabase-plain\"></i>"],
-            "bash":[true, "<i class=\"devicon-bash-plain\"></i>"]
+            "GraphQL":[true, "<i class=\"devicon-graphql-plain-wordmark\"></i>"]
         },
         "frameworks":{
             "react":[true, "<i class=\"devicon-react-original\"></i>"],
@@ -30,6 +30,7 @@
         },
         "cloud":{
             "aws":[true, "<i class=\"devicon-amazonwebservices-plain-wordmark\"></i>"],
+            "PyPi":[true, "<i class=\"devicon-pypi-plain-wordmark\"></i>"],
             "gcp":[true, "<i class=\"devicon-googlecloud-plain\"></i>"],
             "firebase":[true, "<i class=\"devicon-firebase-plain\"></i>"],
             "cloudflare":[true, "<i class=\"devicon-cloudflare-plain\"></i>"],
@@ -45,7 +46,18 @@
             "figma":[true, "<i class=\"devicon-figma-plain\"></i>"],
             "git":[true, "<i class=\"devicon-git-plain\"></i>"],
             "github":[true, "<i class=\"devicon-github-original\"></i>"],
-            "Github Actions":[true, "<i class=\"devicon-githubactions-plain\"></i>"]
+            "Github Actions":[true, "<i class=\"devicon-githubactions-plain\"></i>"],
+            "HomeBrew":[true, "<i class=\"devicon-homebrew-plain-wordmark\"></i>"],
+            "bash":[true, "<i class=\"devicon-bash-plain\"></i>"]
+        },
+        "ML/AI":{
+            "tensorflow":[true, "<i class=\"devicon-tensorflow-original\"></i>"],
+            "keras":[true, "<i class=\"devicon-keras-plain-wordmark\"></i>"],
+            "pytorch":[true, "<i class=\"devicon-pytorch-original\"></i>"],
+            "pandas":[true, "<i class=\"devicon-pandas-plain-wordmark\"></i>"],
+            "numpy":[true, "<i class=\"devicon-numpy-plain\"></i>"],
+            "scikit-learn":[true, "<i class=\"devicon-scikitlearn-plain\"></i>"],
+            "matplotlib":[true, "<i class=\"devicon-matplotlib-plain\"></i>"]
         }
     }
-  }
+}

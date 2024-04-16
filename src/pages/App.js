@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import resumeData from '../resume.json';
+import resumeData from '../data/resume.json';
 import Logo from '../components/logosBool';
 import AppsData from '../data/myApps.json';
 import LogosTech from '../components/logosTech';
@@ -121,6 +121,8 @@ function App() {
         <h3>Tools</h3>
         <LogosTech logosData={techData} numSlides={3} filter="tools"/>
 
+        <h3>Machine Learning and AI</h3>
+        <LogosTech logosData={techData} numSlides={3} filter="ML/AI"/>
 
 
         {showContactScreen && (

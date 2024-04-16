@@ -327,6 +327,7 @@ ul {
 }
 
 .title-and-profile {
+  padding: 50px;
   align-items: center;
   justify-content: center;
   grid-auto-flow: column;
@@ -340,13 +341,14 @@ ul {
   font-size: 50px;
   padding: 100px;
   text-align: left;
+  margin-top: 50px;
 }
 
 .profile {
   display: flex;
   float: right;
   justify-content: right;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-right: 150px;
   border-radius: 50%;
   width: 250px;

@@ -5,7 +5,7 @@ import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
 import Features from './components/logos';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import resumeData from './resume.json';
+import resumeData from './data/resume.json';
 
 const title = resumeData.name;
 const root = ReactDOM.createRoot(document.getElementById('root'));
