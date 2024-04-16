@@ -5,8 +5,14 @@ import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
 import Features from './components/logos';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import resumeData from './resume.json';
 
+const title = resumeData.name;
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+document.getElementById('dynamicTitle').innerText = title;
+document.getElementById('descriptionMeta').setAttribute('content', `${title} portfolio`);
+
 root.render(
   <React.StrictMode>
     <Router>
