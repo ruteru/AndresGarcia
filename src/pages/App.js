@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import resumeData from '../resume.json';
-import Logos from '../components/logos';
+import Logo from '../components/logosBool';
+import AppsData from '../data/myApps.json';
 import './App.css';
 
 function App() {
@@ -85,7 +86,12 @@ function App() {
           <button onClick={handleDownloadButtonClick}>Download Resume</button>
           <button onClick={handleContactButtonClick}>Contact me</button>
         </menubar>
-        <h1 className='title'>Welcome to my profile! <br></br> My name is {resumeData.name}</h1>
+        
+        <div className='tittleProfile'>
+          <img className='profile' src='https://media.licdn.com/dms/image/D4D03AQEKwF_QJ94mLw/profile-displayphoto-shrink_400_400/0/1713109803593?e=1718841600&v=beta&t=uzVc_eXxE6bh6omlk5L0Ro5K8VMWy7sajOM_Be8Zo18' alt=''></img>
+          <h1 className='title'>Welcome to my profile! <br></br> My name is {resumeData.name}</h1>
+        </div>
+        
         <div className='devicons'>
           <i class="devicon-python-plain-wordmark"></i>
           <i class="devicon-javascript-plain"></i>
@@ -95,7 +101,7 @@ function App() {
         </div>
         
         <strong className='myApps'>I am a {resumeData.title} and I inspire in these apps</strong>
-        <Logos />
+        <Logo logosData={AppsData} numSlides={3}/>
         <h2 style={{ padding: '30px', marginTop: '10px' }}>Here are some of my skills</h2>
         <div className='grid'> 
           <div className='square'> <p>Soft Skills</p>
@@ -177,9 +183,7 @@ function App() {
         
 
         <footer>
-            <img src='https://media.licdn.com/dms/image/D4D03AQEKwF_QJ94mLw/profile-displayphoto-shrink_400_400/0/1713109803593?e=1718841600&v=beta&t=uzVc_eXxE6bh6omlk5L0Ro5K8VMWy7sajOM_Be8Zo18' alt='' className='profile'></img>
             <p>This repository is open source and inspired by <a href="https://tsuramii.github.io/online-cv/">@tsuramii's online CV</a>.</p>
-            <p>© {new Date().getFullYear()} {resumeData.name} All rights reserved.</p>
         </footer>
         
       </div>

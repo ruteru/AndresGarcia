@@ -103,13 +103,6 @@ ul {
   text-align: left;
 }
 
-.profile {
-  margin-top: 100px;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-
 .square {
   margin-top: auto;
   margin-bottom: auto;
@@ -257,12 +250,10 @@ ul {
   gap: 10px;
 }
 
-/* this button causes the error */
 .icon-button-download button {
   justify-content: initial;
 }
 
-/* Move the .backDownload button up */
 .backDownload {
   display: flex;
   float: right;
@@ -270,7 +261,6 @@ ul {
   margin-right: 20px;
   margin-top: 40px;
 }
-
 
 .downloadFiles {
   margin-top: auto;
@@ -300,11 +290,13 @@ ul {
   padding: 20px;
   border-radius: 10px;
 }
+
 .workContainer {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
 }
+
 .workSection {
   align-items: center;
   margin-top: 20px;
@@ -334,15 +326,37 @@ ul {
   align-items: flex-start;
 }
 
+.title-and-profile {
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: column;
+}
+
 .title {
+  display: flex;
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: left;
+  font-size: 50px;
   padding: 100px;
   text-align: left;
 }
 
+.profile {
+  display: flex;
+  float: right;
+  justify-content: right;
+  margin-top: 60px;
+  margin-right: 150px;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
 .sumary {
   text-align: start;
-  margin-top: -40px;
-  margin-left: 50px;
+  margin-top: -30px;
+  margin-left: 80px;
   margin-bottom: 40px;
   align-items: top;
   max-width: 500px;
