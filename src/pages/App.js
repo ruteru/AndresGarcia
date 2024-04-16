@@ -159,14 +159,14 @@ function App() {
                   Phone: {resumeData.phone} 
                 </li>
               </ul>
-              <button style={{ float: 'right', marginRight: '20px' }} onClick={handleContactButtonClick}>Back</button>
+              <button className='backDownload' onClick={handleContactButtonClick}>Back</button>
             </div>
           </div>
         )}
 
         {showDownloadScreen && (
           <div className="contact-screen">
-            <div className='contact-square'>
+            <div className='download-square'>
               <h2 style={{ textAlign: 'center' }}>Download Resume</h2>
               <ul>
                 <div className='icon-button-download'>
