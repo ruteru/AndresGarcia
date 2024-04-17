@@ -7,11 +7,6 @@
   "phone": "+5491124697598",
   "github": "https://github.com/ruteru",
   "linkedin": "https://www.linkedin.com/in/andres-garcia-ing/",
-  "skills": {
-    "topSkills": ["problem solving", "Communication", "Teamwork", "Time Management"],
-    "programmingLanguages": ["Python", "Javascript", "HTML", "CSS", "Golang"],
-    "favoriteFrameworks": ["React", "Fastapi", "Tensorflow", "Next.JS", "Express.JS"]
-  },
   "work": [
     {
       "title": "Fullstack Developer",

@@ -2,26 +2,26 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "icons": {
         "databases":{
-            "postgres":[true, "<i class=\"devicon-postgresql-plain\"></i>"],
-            "mysql":[true, "<i class=\"devicon-mysql-original\"></i>"],
-            "mongodb":[true, "<i class=\"devicon-mongodb-plain\"></i>"],
-            "mariadb":[true, "<i class=\"devicon-mariadb-original\"></i>"],
-            "sqlite":[true, "<i class=\"devicon-sqlite-plain\"></i>"],
-            "sqlalchemy":[true, "<i class=\"devicon-sqlalchemy-plain\"></i>"]
+            "Postgres":[true, "<i class=\"devicon-postgresql-plain\"></i>"],
+            "MySQL":[true, "<i class=\"devicon-mysql-original\"></i>"],
+            "MongoDB":[true, "<i class=\"devicon-mongodb-plain\"></i>"],
+            "MariaDB":[true, "<i class=\"devicon-mariadb-original\"></i>"],
+            "Sqlite":[true, "<i class=\"devicon-sqlite-plain\"></i>"],
+            "SqlAlchemy":[true, "<i class=\"devicon-sqlalchemy-plain\"></i>"]
         },
         "programingLanguages":{
-            "python":[true,"<i class=\"devicon-python-plain\"></i>"],
-            "javascript":[true, "<i class=\"devicon-javascript-plain\"></i>"],
-            "golang":[false, "<i class=\"devicon-go-original-wordmark\"></i>"],
+            "Python":[true,"<i class=\"devicon-python-plain\"></i>"],
+            "Javascript":[true, "<i class=\"devicon-javascript-plain\"></i>"],
+            "Golang":[false, "<i class=\"devicon-go-original-wordmark\"></i>"],
             "JSON":[false, "<i class=\"devicon-json-plain\"></i>"],
             "HTML":[true, "<i class=\"devicon-html5-plain\"></i>"],
             "CSS":[true, "<i class=\"devicon-css3-plain\"></i>"],
-            "sql":[true, "<i class=\"devicon-azuresqldatabase-plain\"></i>"],
+            "SQL":[true, "<i class=\"devicon-azuresqldatabase-plain\"></i>"],
             "GraphQL":[true, "<i class=\"devicon-graphql-plain-wordmark\"></i>"]
         },
         "frameworks":{
-            "react":[true, "<i class=\"devicon-react-original\"></i>"],
-            "nextJS":[true, "<i class=\"devicon-nextjs-original-wordmark\"></i>"],
+            "React":[true, "<i class=\"devicon-react-original\"></i>"],
+            "NextJS":[true, "<i class=\"devicon-nextjs-original-wordmark\"></i>"],
             "ExpressJS":[true, "<i class=\"devicon-express-original\"></i>"],
             "Fastapi":[true, "<i class=\"devicon-fastapi-plain\"></i>"],
             "Keras":[true, "<i class=\"devicon-keras-plain-wordmark\"></i>"],
@@ -29,35 +29,35 @@
             "Pandas":[true, "<i class=\"devicon-pandas-plain-wordmark\"></i>"]
         },
         "cloud":{
-            "aws":[true, "<i class=\"devicon-amazonwebservices-plain-wordmark\"></i>"],
+            "AWS":[true, "<i class=\"devicon-amazonwebservices-plain-wordmark\"></i>"],
             "PyPi":[true, "<i class=\"devicon-pypi-plain-wordmark\"></i>"],
-            "gcp":[true, "<i class=\"devicon-googlecloud-plain\"></i>"],
-            "firebase":[true, "<i class=\"devicon-firebase-plain\"></i>"],
-            "cloudflare":[true, "<i class=\"devicon-cloudflare-plain\"></i>"],
+            "GCP":[true, "<i class=\"devicon-googlecloud-plain\"></i>"],
+            "Firebase":[true, "<i class=\"devicon-firebase-plain\"></i>"],
+            "Cloudflare":[true, "<i class=\"devicon-cloudflare-plain\"></i>"],
             "Heroku":[true, "<i class=\"devicon-heroku-plain-wordmark\"></i>"],
-            "vercel":[true, "<i class=\"devicon-vercel-plain\"></i>"],
-            "netlify":[true, "<i class=\"devicon-netlify-plain\"></i>"],
-            "bitbucket":[true, "<i class=\"devicon-bitbucket-original-wordmark\"></i>"]
+            "Vercel":[true, "<i class=\"devicon-vercel-plain\"></i>"],
+            "Netlify":[true, "<i class=\"devicon-netlify-plain\"></i>"],
+            "BitBucket":[true, "<i class=\"devicon-bitbucket-original-wordmark\"></i>"]
         },
         "tools":{
-            "docker":[true, "<i class=\"devicon-docker-plain\"></i>"],
-            "kubernetes":[true, "<i class=\"devicon-kubernetes-plain\"></i>"],
-            "postman":[true, "<i class=\"devicon-postman-plain\"></i>"],
-            "figma":[true, "<i class=\"devicon-figma-plain\"></i>"],
-            "git":[true, "<i class=\"devicon-git-plain\"></i>"],
-            "github":[true, "<i class=\"devicon-github-original\"></i>"],
+            "Docker":[true, "<i class=\"devicon-docker-plain\"></i>"],
+            "Kubernetes":[true, "<i class=\"devicon-kubernetes-plain\"></i>"],
+            "Postman":[true, "<i class=\"devicon-postman-plain\"></i>"],
+            "Figma":[true, "<i class=\"devicon-figma-plain\"></i>"],
+            "Git":[true, "<i class=\"devicon-git-plain\"></i>"],
+            "Github":[true, "<i class=\"devicon-github-original\"></i>"],
             "Github Actions":[true, "<i class=\"devicon-githubactions-plain\"></i>"],
             "HomeBrew":[true, "<i class=\"devicon-homebrew-plain-wordmark\"></i>"],
-            "bash":[true, "<i class=\"devicon-bash-plain\"></i>"]
+            "Bash":[true, "<i class=\"devicon-bash-plain\"></i>"]
         },
         "ML/AI":{
-            "tensorflow":[true, "<i class=\"devicon-tensorflow-original\"></i>"],
-            "keras":[true, "<i class=\"devicon-keras-plain-wordmark\"></i>"],
-            "pytorch":[true, "<i class=\"devicon-pytorch-original\"></i>"],
-            "pandas":[true, "<i class=\"devicon-pandas-plain-wordmark\"></i>"],
-            "numpy":[true, "<i class=\"devicon-numpy-plain\"></i>"],
-            "scikit-learn":[true, "<i class=\"devicon-scikitlearn-plain\"></i>"],
-            "matplotlib":[true, "<i class=\"devicon-matplotlib-plain\"></i>"]
+            "Tensorflow":[true, "<i class=\"devicon-tensorflow-original\"></i>"],
+            "Keras":[true, "<i class=\"devicon-keras-plain-wordmark\"></i>"],
+            "Pytorch":[true, "<i class=\"devicon-pytorch-original\"></i>"],
+            "Pandas":[true, "<i class=\"devicon-pandas-plain-wordmark\"></i>"],
+            "Numpy":[true, "<i class=\"devicon-numpy-plain\"></i>"],
+            "Scikit-Learn":[true, "<i class=\"devicon-scikitlearn-plain\"></i>"],
+            "Matplotlib":[true, "<i class=\"devicon-matplotlib-plain\"></i>"]
         }
     }
 }

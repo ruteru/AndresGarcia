@@ -1,14 +1,14 @@
 {
     "favoriteApps":{
-        "facebook": [false, {"img": "https://www.facebook.com/images/fb_icon_325x325.png"}],
+        "Facebook": [false, {"img": "https://www.facebook.com/images/fb_icon_325x325.png"}],
         "X": [true, {"img": "https://cdn.icon-icons.com/icons2/4029/PNG/512/twitter_x_new_logo_x_icon_256077.png"}],
-        "linkedin": [true, {"img": "https://cdn.icon-icons.com/icons2/3041/PNG/512/linkedin_logo_icon_189225.png"}],
-        "instagram": [true, {"img": "https://cdn.icon-icons.com/icons2/1584/PNG/512/3721672-instagram_108066.png"}],
-        "shazam": [true, {"img": "https://cdn.icon-icons.com/icons2/3041/PNG/512/shazam_logo_icon_189244.png"}],
-        "youtube": [true, {"img": "https://cdn.icon-icons.com/icons2/3041/PNG/512/youtube_logo_icon_189232.png"}],
-        "whatsapp": [true, {"img": "https://cdn.icon-icons.com/icons2/3041/PNG/512/whatsapp_logo_icon_189219.png"}],
-        "twitch": [true, {"img": "https://cdn.icon-icons.com/icons2/3041/PNG/512/twitch_logo_icon_189242.png"}],
-        "spotify": [true, {"img": "https://cdn.icon-icons.com/icons2/3041/PNG/512/spotify_logo_icon_189218.png"}]
+        "Linkedin": [true, {"img": "https://cdn.icon-icons.com/icons2/3041/PNG/512/linkedin_logo_icon_189225.png"}],
+        "Instagram": [true, {"img": "https://cdn.icon-icons.com/icons2/1584/PNG/512/3721672-instagram_108066.png"}],
+        "Shazam": [true, {"img": "https://cdn.icon-icons.com/icons2/3041/PNG/512/shazam_logo_icon_189244.png"}],
+        "Youtube": [true, {"img": "https://cdn.icon-icons.com/icons2/3041/PNG/512/youtube_logo_icon_189232.png"}],
+        "Whatsapp": [true, {"img": "https://cdn.icon-icons.com/icons2/3041/PNG/512/whatsapp_logo_icon_189219.png"}],
+        "Twitch": [true, {"img": "https://cdn.icon-icons.com/icons2/3041/PNG/512/twitch_logo_icon_189242.png"}],
+        "Spotify": [true, {"img": "https://cdn.icon-icons.com/icons2/3041/PNG/512/spotify_logo_icon_189218.png"}]
     }
 }
 

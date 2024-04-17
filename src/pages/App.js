@@ -7,7 +7,6 @@ import techData from '../data/techStack.json';
 import './App.css';
 
 function App() {
-  const { skills } = resumeData;
   const [showContactScreen, setShowContactScreen] = useState(false);
   const [showDownloadScreen, setShowDownloadScreen] = useState(false);
 
@@ -96,9 +95,9 @@ function App() {
         
         <div className='devicons'>
           <i class="devicon-python-plain-wordmark"></i>
+          <i class="devicon-fastapi-plain-wordmark"></i>
           <i class="devicon-javascript-plain"></i>
           <i class="devicon-react-original-wordmark"></i>
-          <i class="devicon-fastapi-plain"></i>
           <p className='sumary'>{resumeData.sumary}</p>
         </div>
         
@@ -107,11 +106,6 @@ function App() {
         <h2 style={{ padding: '30px', marginTop: '10px' }}>Here are some of my skills</h2>
         
         <div className='grid-cube'>
-          
-          <div className='cube'>
-            <h3>Databases</h3>
-            <LogosTech logosData={techData} numSlides={3} filter="databases"/>
-          </div>
 
           <div className='cube'>
           <h3>Programing Languages</h3>
@@ -124,6 +118,16 @@ function App() {
           </div>
 
           <div className='cube'>
+            <h3>Databases</h3>
+            <LogosTech logosData={techData} numSlides={3} filter="databases"/>
+          </div>
+          
+          <div className='cube'>
+            <h3>Machine Learning and AI</h3>
+            <LogosTech logosData={techData} numSlides={3} filter="ML/AI"/>
+          </div>
+
+          <div className='cube'>
             <h3>Cloud Services</h3>
             <LogosTech logosData={techData} numSlides={3} filter="cloud"/>
           </div>
@@ -132,12 +136,6 @@ function App() {
             <h3>Tools</h3>
             <LogosTech logosData={techData} numSlides={3} filter="tools"/>
           </div>
-
-          <div className='cube'>
-            <h3>Machine Learning and AI</h3>
-            <LogosTech logosData={techData} numSlides={3} filter="ML/AI"/>
-          </div>
-
         </div>
         
 
