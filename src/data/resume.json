@@ -12,14 +12,14 @@
       "title": "Fullstack Developer",
       "company": "Dapps Factory",
       "companyUrl": "https://dappsfactory.io/",
-      "date": "2024/02 - 2024/04",
+      "date": "2024/01 - 2024/04",
       "details": "I am a software developer working in the Dapps Factory team."
     },
     {
       "title": "Fullstack Developer",
       "company": "iMCreate",
       "companyUrl": "https://imcreatestudios.com/",
-      "date": "2023/11 - 2023/12",
+      "date": "2023/11 - 2024/01",
       "details": "I am a software developer working in the iMCreate team."
     },
     {
@@ -35,6 +35,24 @@
       "institution": "Università degli studi di Milano",
       "degree": "Bachelor of Computer Science",
       "date": "2020/09 - Present"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Portfolio",
+      "url": "https://github.com/ruteru/AndresGarcia"
+    },
+    {
+      "title": "Fast-Support",
+      "url": "https://pypi.org/project/fast-support/0.1.0/"
+    },
+    {
+      "title": "pdf2vectors",
+      "url": "https://pypi.org/project/pdf2vectors/"
+    },
+    {
+      "title": "askbot",
+      "url": "https://askbot-frontend-ew27.onrender.com/"
     }
   ]
 }
