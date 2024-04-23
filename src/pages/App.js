@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import resumeData from '../data/resume.json';
 import Logo from '../components/logosBool';
 import AppsData from '../data/myApps.json';
@@ -9,6 +9,18 @@ import './App.css';
 function App() {
   const [showContactScreen, setShowContactScreen] = useState(false);
   const [showDownloadScreen, setShowDownloadScreen] = useState(false);
+  
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   const handleContactButtonClick = () => {
     setShowContactScreen(!showContactScreen);
@@ -103,8 +115,10 @@ function App() {
         
         <strong className='myApps'>I am a {resumeData.title} and I inspire in these apps</strong>
         <Logo style={{ maxWidth: '1000px' }} logosData={AppsData} numSlides={3}/>
+
+        <div class="calendly-inline-widget" data-url="https://calendly.com/andresgarcia_dev/30min?hide_gdpr_banner=1"><calendarUrl /></div>
+
         <h2 style={{ padding: '30px', marginTop: '10px' }}>Here are some of my skills</h2>
-        
         <div className='grid-cube'>
 
           <div className='cube'>
