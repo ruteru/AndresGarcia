@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './pages/App';
-import reportWebVitals from './reportWebVitals';
-import Features from './components/logos';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Trading from './pages/trading'; 
+import NotFound from './pages/NotFound';
 import resumeData from './data/resume.json';
+import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const title = resumeData.name;
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,13 +19,11 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/features" element={<Features />} />
+        <Route path="/trading" element={<Trading />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals(console.log);
