@@ -13,21 +13,21 @@
       "company": "Dapps Factory",
       "companyUrl": "https://dappsfactory.io/",
       "date": "2024/01 - 2024/04",
-      "details": "I am a software developer working in the Dapps Factory team."
+      "details": "Used Technologies: ECS, DynamoDB, S3, Lambda, API Gateway, Scikit Learn, Tensorflow, FastAPI, I have constructed a chat with pdfs for the Dapps Factory team. and instruct users how to use it in their projects for Galicia Bank"
     },
     {
       "title": "Fullstack Developer",
       "company": "iMCreate",
       "companyUrl": "https://imcreatestudios.com/",
       "date": "2023/11 - 2024/01",
-      "details": "I am a software developer working in the iMCreate team."
+      "details": "Used Technologies: Paypal API, Stripe API, MongoDB, Mongoose, NextJS, ExpressJS. For this small contractor they asked me to automatize the payments for their clients and affiliates, making it fast and easy to manage their accounts."
     },
     {
       "title": "Backend Developer",
       "company": "Appen",
       "companyUrl": "https://www.appen.com/",
       "date": "2020/09 - 2023/08",
-      "details": "I am a software developer working in the Appen team."
+      "details": "Used Technologies: Python, Javascript, Kubernetes, Docker, AWS, GIT, Postman and so on! Most of my experience in the Apen Team was as Backend Developer. inplementing solutions for the servers and debuggin applicantions as well in testing."
     }
   ],
   "education": [
