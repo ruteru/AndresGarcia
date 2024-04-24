@@ -1,15 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
+import "chart.js/auto";
+import './trading.css'
 
 function Trading() {
-  const [tradesData, setTradesData] = useState([]);
+  const [chartData, setChartData] = useState({
+    labels: [],
+    datasets: [
+      {
+        label: "Price",
+        data: [],
+        fill: false,
+        borderColor: "rgb(75, 192, 192)",
+        tension: 0.1,
+      },
+    ],
+  });
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const headersList = {
-          // Add any required headers here
-        };
+        }; 
         const response = await fetch(
           "https://api.binance.com/api/v3/historicalTrades?symbol=BTCUSDT",
           {
@@ -21,36 +33,34 @@ function Trading() {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        console.log("Fetched data:", data);
-        setTradesData(data);
+
+        const labels = data.map((trade) =>
+          new Date(trade.time).toLocaleString()
+        );
+        const prices = data.map((trade) => parseFloat(trade.price));
+
+        setChartData({
+          ...chartData,
+          labels: labels,
+          datasets: [
+            {
+              ...chartData.datasets[0],
+              data: prices,
+            },
+          ],
+        });
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
 
-    console.log("Fetching data...");
     fetchData();
-  }, []);
-
-  const chartData = {
-    labels: tradesData.map((trade) =>
-      new Date(trade.time).toLocaleString()
-    ),
-    datasets: [
-      {
-        label: "Price",
-        data: tradesData.map((trade) => parseFloat(trade.price)),
-        fill: false,
-        borderColor: "rgb(75, 192, 192)",
-        tension: 0.1,
-      },
-    ],
-  };
+  }, [chartData]);
 
   return (
-    <div>
-      <h1>Trading</h1>
-      <div style={{ height: "400px", width: "600px" }}>
+    <div className="trading-container">
+      <h1 className="chart-title">Trading</h1>
+      <div className="chart-container">
         <Line data={chartData} />
       </div>
     </div>
