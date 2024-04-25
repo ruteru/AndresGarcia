@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './pages/App';
 import Trading from './pages/trading'; 
+import Outsiders from './pages/mobile-desktop/outsiders'
 import NotFound from './pages/NotFound';
 import resumeData from './data/resume.json';
 import reportWebVitals from './reportWebVitals';
@@ -19,6 +20,7 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path='/outsiders' element={<Outsiders />} />
         <Route path="/trading" element={<Trading />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
