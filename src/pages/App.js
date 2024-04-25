@@ -5,7 +5,6 @@ import AppsData from '../data/myApps.json';
 import LogosTech from '../components/logosTech';
 import techData from '../data/techStack.json';
 import './App.css';
-import './AppMobile.css'
 
 function App() {
   const [showContactScreen, setShowContactScreen] = useState(false);
