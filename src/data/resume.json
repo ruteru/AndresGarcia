@@ -1,7 +1,7 @@
 {
   "name": "Andres Garcia",
   "title": "Software Developer",
-  "sumary": "I'm a Fullstack Software Developer with experience in data science, algorithms,  and machine learning, along with  proficiency in cloud, I'm well- versed in  project management and CI/CD  lifecycles, ensuring efficient and  successful outcomes.  What sets me apart is my dedication to  effective communication and  collaboration, ensuring a nice approach  to solving complex technical challenges.",
+  "sumary": "Im specialized in Python and JavaScript. My favorite frameworks are Fastapi, Sqlalchemy, React and React Native. For DevOps I use Docker and Terraform also I'm proficent in English, Spanish and Italian.",
   "location": "Buenos Aires, Argentina",
   "email": "garcicon45@gmail.com",
   "phone": "+5491124697598",
@@ -9,32 +9,32 @@
   "linkedin": "https://www.linkedin.com/in/andres-garcia-ing/",
   "work": [
     {
-      "title": "Fullstack Developer",
+      "title": "Progect Mananger and Fullstack Developer",
       "company": "Dapps Factory",
       "companyUrl": "https://dappsfactory.io/",
-      "date": "2024/01 - 2024/04",
-      "details": "Used Technologies: ECS, DynamoDB, S3, Lambda, API Gateway, Scikit Learn, Tensorflow, FastAPI, I have constructed a chat with pdfs for the Dapps Factory team. and instruct users how to use it in their projects for Galicia Bank"
+      "date": "01/2024 - 04/2024",
+      "details": "I successfully constructed a chat interface integrated with PDF and AI functionality for the Dapps Factory team. This innovative solution wasspecifically designed to enhance user experience and streamline projectworkflows within the Galicia Bank ecosystem."
     },
     {
       "title": "Fullstack Developer",
-      "company": "iMCreate",
+      "company": "ImCreate Studios",
       "companyUrl": "https://imcreatestudios.com/",
-      "date": "2023/11 - 2024/01",
-      "details": "Used Technologies: Paypal API, Stripe API, MongoDB, Mongoose, NextJS, ExpressJS. For this small contractor they asked me to automatize the payments for their clients and affiliates, making it fast and easy to manage their accounts."
+      "date": "11/2023 - 01/2024",
+      "details": "The company asked me to design a payment automation within their APIs functionality. The implementation was specifically to quickness the finance along the users, referrals and contributors"
     },
     {
       "title": "Backend Developer",
       "company": "Appen",
       "companyUrl": "https://www.appen.com/",
-      "date": "2020/09 - 2023/08",
-      "details": "Used Technologies: Python, Javascript, Kubernetes, Docker, AWS, GIT, Postman and so on! Most of my experience in the Apen Team was as Backend Developer. inplementing solutions for the servers and debuggin applicantions as well in testing."
+      "date": "02/2020 - 08/2023",
+      "details": "In my first professional role as a Backend Developer with the Appen Team, I was instrumental in implementing server-side developmentand ensuring the robustness and reliability of various applications."
     }
   ],
   "education": [
     {
       "institution": "Università degli studi di Milano",
       "degree": "Bachelor of Computer Science",
-      "date": "2020/09 - Present"
+      "date": "09/2020 - 04/2023"
     }
   ],
   "projects": [

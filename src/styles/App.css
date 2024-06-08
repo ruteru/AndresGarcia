@@ -68,38 +68,6 @@ menubar button {
   margin-left: 10px;
 }
 
-button {
-  border-radius: 25px;
-  background-color: #f7e8e8;
-  border: none;
-  color: rgb(40, 40, 40);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-p {
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  padding: 5;
-  font-size: 20px;
-  text-align: left;
-}
-
-footer {
-  padding: 5vw 3vw;
-}
-
-a {
-  color: #04b2e2;
-}
 .square {
   margin-top: auto;
   margin-bottom: auto;
@@ -279,8 +247,6 @@ a {
   justify-content: center;
 }
 
-
-
 .downloadFiles {
   margin-top: auto;
   margin-bottom: auto;
@@ -349,7 +315,7 @@ a {
   margin-top: 5vw;
 }
 
-.profile {
+/* .profile {
   display: flex;
   float: right;
   justify-content: right;
@@ -359,7 +325,7 @@ a {
   width: 30vw;
   max-width: 250px;
   height: auto;
-}
+} */
 
 .sumary {
   text-align: start;

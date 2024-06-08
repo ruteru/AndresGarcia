@@ -4,8 +4,7 @@ import Logo from '../components/logosBool';
 import AppsData from '../data/myApps.json';
 import LogosTech from '../components/logosTech';
 import techData from '../data/techStack.json';
-import './App.css';
-import Outsiders from './mobile-desktop/outsiders';
+import '../styles/App.css';
 
 function App() {
   const [showContactScreen, setShowContactScreen] = useState(false);
@@ -211,7 +210,6 @@ function App() {
 
         <h3>Projects</h3>
         <div className='projectContainer'>
-          <a src=<Outsiders /> href="outsiders">Outsiders</a>
         </div>
 
         <footer>
