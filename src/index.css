@@ -53,3 +53,36 @@ footer {
 a {
   color: #04b2e2;
 }
+
+@font-face {
+  font-family: Manrope-Bold;
+  src: url(./assets/Manrope/static/Manrope-Bold.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Manrope-Regular;
+  src: url(./assets/Manrope/static/Manrope-Regular.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Manrope-Light;
+  src: url(./assets/Manrope/static/Manrope-Light.ttf);
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titleF {
+  font-family: Manrope-Bold;
+}
+
+.sentenceF {
+  font-family: Manrope-Regular;
+}
+
+.descriptionF {
+  font-family: Manrope-Light;
+}
