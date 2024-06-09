@@ -10,6 +10,7 @@ import {
     AiOutlineMenu,
     AiOutlineHome
 } from 'react-icons/ai';
+import { IconContext } from "react-icons";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -50,37 +51,49 @@ export default function Header() {
     };
 
     const pageIcons = {
-        Home: <AiOutlineHome />,
+        Home: <AiOutlineHome/>,
         Work: <AiOutlineCode />,
         Services: <AiOutlineApi />,
         Pricing: <AiOutlineMonitor />,
     };
 
     return (
-        <div className="container-header">
-            <div className="currentPage">
-                {pageIcons[currentPage] || <AiOutlineHome />}
-                <span>{currentPage}</span>
-            </div>
-            <div className="navbar">
-                <button onClick={() => handleNavigation('Home', '/home')}><AiOutlineHome />Home</button>
-                <button onClick={() => handleNavigation('Work', '/work')}><AiOutlineCode />Work</button>
-                <button onClick={() => handleNavigation('Services', '/services')}><AiOutlineApi />Services</button>
-                <button onClick={() => handleNavigation('Pricing', '/pricing')}><AiOutlineMonitor />Pricing</button>
-                <button onClick={handleBookCall}><AiOutlineCalendar />Book a Call</button>
-            </div>
-            <div className="menu-button" onClick={toggleMenu}>
-                <AiOutlineMenu />
-            </div>
-            {menuOpen && (
-                <div className="dropdown-menu">
-                    <button onClick={() => handleNavigation('Home', '/home')}><AiOutlineHome />Home</button>
-                    <button onClick={() => handleNavigation('Work', '/work')}><AiOutlineCode />Work</button>
-                    <button onClick={() => handleNavigation('Services', '/services')}><AiOutlineApi />Services</button>
-                    <button onClick={() => handleNavigation('Pricing', '/pricing')}><AiOutlineMonitor />Pricing</button>
-                    <button onClick={handleBookCall}><AiOutlineCalendar />Book a Call</button>
+        <IconContext.Provider value={{ color: '#1e1e20', size: '25px',  className:"icon-context"}}> 
+            <div className="container-header">
+                <div className="currentPage">
+                    {pageIcons[currentPage] || <AiOutlineHome/>}
+                    <span>{currentPage}</span>
                 </div>
-            )}
-        </div >
+                <div className="navbar">
+                    {['Home', 'Work', 'Services', 'Pricing'].map((page) => (
+                        <button
+                            key={page}
+                            onClick={() => handleNavigation(page, `/${page.toLowerCase()}`)}
+                            className={currentPage === page ? 'active' : ''}
+                        >
+                            {pageIcons[page]}{page}
+                        </button>
+                    ))}
+                    <button onClick={handleBookCall}><AiOutlineCalendar />Booking</button>
+                </div>
+                <div className="menu-button" onClick={toggleMenu}>
+                    <AiOutlineMenu />
+                </div>
+                {menuOpen && (
+                    <div className="dropdown-menu">
+                        {['Home', 'Work', 'Services', 'Pricing'].map((page) => (
+                            <button
+                                key={page}
+                                onClick={() => handleNavigation(page, `/${page.toLowerCase()}`)}
+                                className={currentPage === page ? 'active' : ''}
+                            >
+                                {pageIcons[page]}{page}
+                            </button>
+                        ))}
+                        <button onClick={handleBookCall}><AiOutlineCalendar />Book a Call</button>
+                    </div>
+                )}
+            </div >
+        </IconContext.Provider>
     );
 }

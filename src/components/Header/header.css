@@ -1,7 +1,7 @@
 .container-header {
     height: 64px;
     width: 60%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 3;
@@ -14,6 +14,9 @@
     background-color: #fefeff;
     box-shadow: 0px 0px 3px #171515;
     border-radius: 9999px;
+    font-family: Manrope-Regular;
+    font-weight: 500;
+    font-style: normal;
 }
 
 
@@ -32,13 +35,40 @@
 
 .navbar {
     height: 64px;
-    width: 80%;
-    margin-right: 20px;
-    justify-content: flex-end;
+    width: 60%;
+    margin-right: 8px;
+    justify-content: right;
     align-items: center;
     position: relative;
     display: flex;
     flex-direction: row;
+}
+
+.navbar button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar button.active {
+    color: #4c2882;
+}
+
+.navbar button.active::after {
+    content: '';
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 50px;
+    background-color: #4c2882;
+    border-radius: 2px;
 }
 
 .profile {
@@ -81,9 +111,7 @@
     text-align: left;
 }
 
-.dropdown-menu button:hover {
-    background-color: #f0f0f0;
-}
+
 
 @media (max-width: 1000px) {
     .navbar {
