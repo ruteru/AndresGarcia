@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './calendar.css';
 
-export default function Calendar({ onSelectDate }) {
+export default function Calendar({ selectedDates, onSelectDate }) {
     const [dates, setDates] = useState([]);
     const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth());
     const [year, setYear] = useState(new Date().getFullYear());
@@ -22,7 +22,7 @@ export default function Calendar({ onSelectDate }) {
                 daysArray.push(date);
             }
         }
-        
+
         setDates(daysArray);
     };
 
@@ -63,8 +63,21 @@ export default function Calendar({ onSelectDate }) {
         setIsUndetermined(e.target.checked);
     };
 
+    const isInRange = (date) => {
+        if (selectedDates.length < 2) return false;
+        const start = new Date(selectedDates[0]);
+        const end = new Date(selectedDates[1]);
+        return date > start && date < end;
+    };
+
     return (
         <div className="calendar">
+            {!isUndetermined && (
+                <div className="selected-dates">
+                    <span>Selected Dates: </span>
+                    {selectedDates.join(' - ')}
+                </div>
+            )}
             <div className="month-selector">
                 <label htmlFor="month">Select Month:</label>
                 <select id="month" onChange={handleMonthChange} value={`${year}-${selectedMonth}`}>
@@ -79,17 +92,22 @@ export default function Calendar({ onSelectDate }) {
                     Undetermined
                 </label>
             </div>
-            <div className={`calendar-grid ${isUndetermined ? 'disabled' : ''}`}>
-                {dates.map((date, index) => (
-                    <div 
-                        key={index} 
-                        className="calendar-day"
-                        onClick={() => handleDateClick(date)}
-                    >
-                        {date.getDate()}
-                    </div>
-                ))}
-            </div>
+            {isUndetermined ? null : (
+                <div className={`calendar-grid ${isUndetermined ? 'disabled' : ''}`}>
+                    {dates.map((date, index) => {
+                        const dateString = date.toISOString().split('T')[0];
+                        return (
+                            <div
+                                key={index}
+                                className={`calendar-day ${selectedDates.includes(dateString) ? 'selected' : ''} ${isInRange(date) ? 'in-range' : ''}`}
+                                onClick={() => handleDateClick(date)}
+                            >
+                                {date.getDate()}
+                            </div>
+                        );
+                    })}
+                </div>
+            )}
         </div>
     );
 }

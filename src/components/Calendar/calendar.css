@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+.selected-dates {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .month-selector {
     margin-bottom: 20px;
 }
@@ -39,4 +45,13 @@
 
 .calendar-day:hover {
     background-color: #c0c0c0;
+}
+
+.calendar-day.selected {
+    background-color: #a0e0a0;
+    font-weight: bold;
+}
+
+.calendar-day.in-range {
+    background-color: #d0ffd0;
 }
