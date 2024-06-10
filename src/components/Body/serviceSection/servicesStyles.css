@@ -1,12 +1,14 @@
 .servicesContainer {
     display: flex;
+    position: initial;
     flex-direction: row;
-    position: relative;
-    width: 95%;
-    height: 80%;
-    gap: 4vh;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    place-self: center center;
+    height: 76vh;
+    width: 200vh;
+    gap: 4vh;
+    padding: 1vh;
 }
 
 .sectionColumn {
