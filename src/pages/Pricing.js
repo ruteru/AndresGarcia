@@ -1,11 +1,16 @@
 import React from "react";
 import Header from "../components/Header/Header";
+import Tasks from "../components/Body/pricing/Tasks";
+import { ConstructionProvider } from '../Context/ConstructionContext';
+import { useConstructionContext } from "../Context/ConstructionContext";
 
 export default function Pricing() {
     return (
         <div>
             <Header />
-            <h1>Pricing Page</h1>
+            <ConstructionProvider>
+                <Tasks />
+            </ConstructionProvider>
         </div>
     );
 }
