@@ -1,28 +1,85 @@
 .presentation {
-    width: 90%;
-    height: auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    top: 0;
+    width: 90%;
+    height: 70vh;
     gap: 10px;
     padding: 20px;
 }
 
-.profileSectionContainer {
+.presentation span {
+    font-family: Manrope-Regular;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.foo {
     display: flex;
-    flex-direction: column;
+    position: relative;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    bottom: 5vh;
+}
+
+.techStack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
     width: 90%;
     max-width: 600px;
-    margin-bottom: 20px;
+    padding: 20px;
+    gap: 3vh;
+}
+
+.profileSectionContainer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 15px;
     border-radius: 15px;
-    background-color: #fefeff;
-    box-shadow: 0px 0px 3px #171515;
     padding: 20px;
 }
 
+.presentationCard {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;
+    height: 32vh;
+    text-align: center;
+    gap: 20px;
+}
+
+.presentationInfo {
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+    top: 0;
+    left: 0;
+    width: 45vh;
+    height: 35vh;
+    text-align: left;
+}
+
 .profilePhoto {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
     width: 30vh;
     height: 30vh;
     border-radius: 25px;
@@ -30,19 +87,9 @@
     box-shadow: 0px 0px 3px #171515;
 }
 
-.info h3 {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.info span {
-    font-size: 17px;
-    display: block;
-}
-
 .description {
     text-align: justify;
-    margin-top: 10px;
+    margin-top: 5vh;
     width: 100%;
 }
 
@@ -53,7 +100,6 @@
     gap: 15px;
     padding: 15px;
     border-radius: 25px;
-    margin-top: 20px;
 }
 
 .social a {
@@ -64,41 +110,33 @@
     transform: scale(1.2);
 }
 
-.technologiesSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    max-width: 800px;
-    border-radius: 15px;
-    background-color: #fefeff;
-    box-shadow: 0px 0px 3px #171515;
-    padding: 20px;
-    text-align: center;
-}
-
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .presentation {
-        flex-direction: row;
-    }
-
-    .profileSectionContainer, .technologiesSection {
-        width: 45%;
-        height: auto;
+        margin-top: 2vh;
     }
 
     .profileSectionContainer {
-        margin-bottom: 0;
+        align-items: center;
+    }
+    
+    .presentationCard {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
     }
 
-    .technologiesSection {
-        align-items: flex-start;
+    .presentationInfo {
+        height: 25svh;
+        text-align: center;
     }
-}
 
-@media (max-width: 768px) {
-    .profilePhoto {
-        width: 20vh;
+    .profilePhoto{
         height: 20vh;
+        width: 20vh;
+    }
+
+    .foo {
+        bottom: 0;
+        margin-top: 7vh;
     }
 }

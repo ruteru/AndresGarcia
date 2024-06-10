@@ -6,30 +6,54 @@ import Whatsapp from '../../../assets/svg/WhatsApp';
 import Linkedin from '../../../assets/svg/LinkedIn';
 import Gmail from '../../../assets/svg/Gmail';
 import Resume from '../../../data/resume.json'
+import {
+    FaPython,
+    FaJs,
+    FaGoogle,
+    FaAws,
+    FaNodeJs,
+    FaReact,
+    faGo
+} from 'react-icons/fa';
+import { BiLogoGoLang } from "react-icons/bi";
 
 export default function Presentation() {
-    const { name, phone, email, sumary, title, github, linkedin } = Resume;
+    const { name, phone, email, location, sumary, github, linkedin } = Resume;
 
     return (
         <div className="presentation">
             <div className="profileSectionContainer">
-                <img src={Profile} className="profilePhoto" alt=""></img>
-                <h3>{name}</h3>
-                <span>{phone}</span>
-                <span>{email}</span>
+                <div className="presentationCard">
+                    <img src={Profile} className="profilePhoto" alt=""></img>
+                    <div className="presentationInfo">
+                        <h2 className="titleF">{name}</h2>
+                        <span>{phone}</span>
+                        <span>{location}</span>
+                        <span>{email}</span>
+                        <div className="social">
+                            <a href={github} alt='GitHub'><Github /></a>
+                            <a href={linkedin} alt='LinkedIn'><Linkedin /></a>
+                            <a href={`https://wa.me/${phone}`} alt='WhatsApp'><Whatsapp /></a>
+                            <a href={`mailto:${email}`} alt='Gmail'><Gmail /></a>
+                        </div>
+                    </div>
+                </div>
                 <div className="description">
                     <span>{sumary}</span>
                 </div>
-                <div className="social">
-                    <a href={github} alt='GitHub'><Github /></a>
-                    <a href={linkedin} alt='LinkedIn'><Linkedin /></a>
-                    <a href={`https://wa.me/${phone}`} alt='WhatsApp'><Whatsapp /></a>
-                    <a href={`mailto:${email}`} alt='Gmail'><Gmail /></a>
-                </div>
+
             </div>
-            <div className="technologiesSection">
-                <span>Hi, my name is {name}, I'm a {title}</span>
-                <h3>People reach out to me when they need exceptional quality design done blazingly fast</h3>
+            <div className="foo">
+                <h3>Experience with</h3>
+                <div className="techStack">
+                    <FaPython size={50} />
+                    <FaJs size={50} />
+                    <FaReact size={50} />
+                    <BiLogoGoLang size={50} />
+                    <FaNodeJs size={50} />
+                    <FaGoogle size={50} />
+                    <FaAws size={50} />
+                </div>
             </div>
         </div>
     );
