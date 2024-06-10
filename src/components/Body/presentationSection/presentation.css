@@ -4,11 +4,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 0;
-    width: 90%;
-    height: 70vh;
-    gap: 10px;
-    padding: 20px;
+    width: 200vh;
+    height: auto;
+    gap: 9px;
+    align-self: center;
 }
 
 .presentation span {
@@ -24,7 +23,7 @@
     align-items: center;
     flex-direction: column;
     height: fit-content;
-    bottom: 5vh;
+    bottom: 8vh;
 }
 
 .techStack {
@@ -35,7 +34,6 @@
     height: 5vh;
     width: 90%;
     max-width: 600px;
-    padding: 20px;
     gap: 3vh;
 }
 
@@ -112,6 +110,8 @@
 
 @media (max-width: 768px) {
     .presentation {
+        align-self: center;
+        width: 40vh;
         margin-top: 2vh;
     }
 
@@ -138,5 +138,10 @@
     .foo {
         bottom: 0;
         margin-top: 7vh;
+    }
+
+    .techStack {
+        max-width: 40vh;
+        background-color: red;
     }
 }

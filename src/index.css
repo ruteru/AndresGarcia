@@ -1,22 +1,20 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 100px;
-  padding-bottom: 10px;
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding-top: 90px;
+  padding-bottom: 10px;
   gap: 20px;
+  margin: 0;
   background-color: #eff1f6;
+  font-family: Manrope-Regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
@@ -90,8 +88,11 @@ a {
 h1,
 h2,
 h3,
+h4,
 .titleF {
   font-family: Manrope-Bold;
+  font-weight: 900;
+  font-style: normal;
 }
 
 p,
@@ -104,4 +105,6 @@ span,
 
 .descriptionF {
   font-family: Manrope-Light;
+  font-weight: 200;
+  font-style: italic;
 }

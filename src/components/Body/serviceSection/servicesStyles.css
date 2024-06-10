@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     place-self: center center;
+    margin-top: 1vh;
     height: 76vh;
     width: 200vh;
     gap: 4vh;
