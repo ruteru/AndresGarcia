@@ -56,7 +56,7 @@ function ServiceColumn({ image, title, description, isExpanded, onLearnMoreClick
                         <h1 className="titleF">Backend Services</h1>
                         <p>
                             As a specialist in Python, I bring a nice experience in building robust,
-                            scalable, and efficient backend architectures. In addition to Python, 
+                            scalable, and efficient backend architectures. In addition to Python,
                             I have extensive experience with Node.js and Golang.
                         </p>
 
@@ -85,14 +85,79 @@ function ServiceColumn({ image, title, description, isExpanded, onLearnMoreClick
                 return (
                     <div className="hiddenContent">
                         <h1>Frontend Services</h1>
-                        <p>Detail about Frontend services...</p>
+                        <p>
+                            I bring extensive experience and expertise,
+                            my skill set includes a robust
+                            ability to accurately translate Figma designs
+                            and templates into pixel-perfect, high-performance
+                            web pages, applications, cloning
+                            websites and ensuring their functionality mirrors
+                            the original to the finest detail.
+                        </p>
+                        <h2>Technical Proficiencies:</h2>
+                        <ul>
+                            <li>
+                                <strong>HTML & CSS</strong>
+                            </li>
+                            <li>
+                                <strong>JavaScript</strong>
+                            </li>
+                            <li>
+                                <strong>React & React Native</strong>
+                            </li>
+                            <li>
+                                <strong>Responsive Design</strong>
+                            </li>
+                            <li>
+                                <strong>SEO Optimization</strong>
+                            </li>
+                            <li>
+                                <strong>CSS Animations</strong>
+                            </li>
+                            <li>
+                                <strong>Server-Side Rendering (SSR)</strong>
+                            </li>
+                        </ul>
+                        <p>
+                            I am capable of transforming complex design concepts
+                            into user-friendly, functional applications.
+                            My approach emphasizes performance, accessibility, and maintainability,
+                            ensuring that the solutions I develop not only meet but
+                            exceed user expectations.
+                        </p>
                     </div>
                 );
             case "Fullstack":
                 return (
                     <div className="hiddenContent">
                         <h1>Fullstack Services</h1>
-                        <p>Detail about Fullstack services...</p>
+                        <p>
+                            As a Fullstack Developer, I seamlessly integrate frontend and backend
+                            technologies to deliver comprehensive solutions. My expertise spans
+                            across various technologies and frameworks, enabling me to build end-to-end
+                            applications that are both robust and scalable.
+                        </p>
+                        <h2>Technical Proficiencies:</h2>
+                        <ul>
+                            <li>
+                                <strong>Frontend Development</strong>
+                            </li>
+                            <li>
+                                <strong>Backend Development</strong>
+                            </li>
+                            <li>
+                                <strong>Database Management</strong>
+                            </li>
+                            <li>
+                                <strong>API Development</strong>
+                            </li>
+                            <li>
+                                <strong>DevOps</strong>
+                            </li>
+                            <li>
+                                <strong>Fullstack Integration</strong>
+                            </li>
+                        </ul>
                     </div>
                 );
             case "Machine Learning":
