@@ -65,6 +65,7 @@
     font-weight: 500;
     font-style: normal;
 }
+
 .sectionColumn.expanded {
     display: flex;
     width: 100%;
@@ -104,4 +105,70 @@
 
 .hiddenContent strong {
     margin-top: -15px;
+}
+
+@media (max-width: 768px) {
+    .servicesContainer {
+        height: auto;
+        width: 42vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectionColumn {
+        height: auto;
+        margin-bottom: 2vh;
+    }
+
+    .discoverButtons {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin-top: 10vh;
+    }
+
+    .sectionColumn.expanded {
+        flex-direction: column;
+    }
+
+    .sectionColumn.expanded .originalContent {
+        width: 100%;
+        height: auto;
+    }
+
+    .sectionColumn.expanded .hiddenContent {
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: #3a3a3a;
+        border-radius: 0 0 15px 15px;
+        padding: 20px;
+        animation: slideUp 0.5s ease-in-out;
+    }
+
+    .hiddenContent h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hiddenContent p {
+        left: 15px;
+        width: 95%;
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 }
