@@ -8,12 +8,10 @@ import Gmail from '../../../assets/svg/Gmail';
 import Resume from '../../../data/resume.json'
 import {
     FaPython,
-    FaJs,
     FaGoogle,
     FaAws,
     FaNodeJs,
     FaReact,
-    faGo
 } from 'react-icons/fa';
 import { BiLogoGoLang } from "react-icons/bi";
 import { SiTerraform } from "react-icons/si";
@@ -48,10 +46,9 @@ export default function Presentation() {
                 <h3>Experience with</h3>
                 <div className="techStack">
                     <FaPython size={50} />
-                    <FaJs size={50} />
+                    <FaNodeJs size={50} />
                     <FaReact size={50} />
                     <BiLogoGoLang size={50} />
-                    <FaNodeJs size={50} />
                     <SiTerraform size={50} />
                     <FaGoogle size={50} />
                     <FaAws size={50} />
