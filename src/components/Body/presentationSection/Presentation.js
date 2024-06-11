@@ -16,6 +16,7 @@ import {
     faGo
 } from 'react-icons/fa';
 import { BiLogoGoLang } from "react-icons/bi";
+import { SiTerraform } from "react-icons/si";
 
 export default function Presentation() {
     const { name, phone, email, location, sumary, github, linkedin } = Resume;
@@ -51,6 +52,7 @@ export default function Presentation() {
                     <FaReact size={50} />
                     <BiLogoGoLang size={50} />
                     <FaNodeJs size={50} />
+                    <SiTerraform size={50} />
                     <FaGoogle size={50} />
                     <FaAws size={50} />
                 </div>
