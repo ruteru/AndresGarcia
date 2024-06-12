@@ -7,9 +7,10 @@ export default function Work() {
         <div>
             <Header />
             <ResumeComponent />
-
-            <h1>Client-side Web Scraper</h1>
-            <ExternalData />
+            <div className='dataContainer'>
+                <h1>Client-side Web Scraper</h1>
+                <ExternalData />
+            </div>
         </div>
     );
 }

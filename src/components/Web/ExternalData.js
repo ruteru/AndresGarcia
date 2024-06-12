@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './dataStyles.css';
 
 function ExternalData() {
   const [data, setData] = useState([]);
@@ -25,18 +26,31 @@ function ExternalData() {
     }
   };
 
+  useEffect(() => {
+    scrapeData();
+  }, []);
+
   return (
-    <div>
-      <button onClick={scrapeData}>Fetch Data</button>
+    <div className="dataContainer">
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {data.length > 0 && (
-        <div>
-          {data.map((item, index) => (
-            <div key={index}>
-              <h2>{item.title}</h2>
-              <p>{item.body}</p>
-            </div>
-          ))}
+        <div className="tables">
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Body</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((item, index) => (
+                <tr key={index}>
+                  <td>{item.title}</td>
+                  <td>{item.body}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       )}
     </div>
