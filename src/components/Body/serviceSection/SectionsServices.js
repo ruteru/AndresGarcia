@@ -180,7 +180,7 @@ function ServiceColumn({ image, title, description, isExpanded, onLearnMoreClick
     return (
         <div className={`sectionColumn ${isExpanded ? 'expanded' : ''}`}>
             <div className="originalContent">
-                <img src={image} alt={title} className="portrait" />
+                <img src={image} alt={title} />
                 <h2 className="titleF">{title}</h2>
                 <p className="sentenceF">{description}</p>
                 <div className="discoverButtons">
