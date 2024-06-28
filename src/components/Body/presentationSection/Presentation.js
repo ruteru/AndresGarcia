@@ -1,9 +1,6 @@
 import React from "react";
 import './presentation.css'
-import Profile from '../../../assets/img/profile.png';
-import Github from '../../../assets/svg/GithubMark';
-import Whatsapp from '../../../assets/svg/WhatsApp';
-import Linkedin from '../../../assets/svg/LinkedIn';
+import Profile from '../../../assets/img/profile.webp';
 import Gmail from '../../../assets/svg/Gmail';
 import Resume from '../../../data/resume.json'
 import {
@@ -13,8 +10,15 @@ import {
     FaNodeJs,
     FaReact,
     FaDocker,
+    FaWhatsappSquare, 
+    FaLinkedin, 
+    FaGithubSquare,
 } from 'react-icons/fa';
-import { SiTerraform, SiKubernetes  } from "react-icons/si";
+import { 
+    SiTerraform, 
+    SiKubernetes,
+    SiGmail,
+  } from "react-icons/si";
 
 export default function Presentation() {
     const { name, phone, email, location, sumary, github, linkedin } = Resume;
@@ -30,10 +34,10 @@ export default function Presentation() {
                         <span>{location}</span>
                         <span>{email}</span>
                         <div className="social">
-                            <a href={github} alt='GitHub'><Github /></a>
-                            <a href={linkedin} alt='LinkedIn'><Linkedin /></a>
-                            <a href={`https://wa.me/${phone}`} alt='WhatsApp'><Whatsapp /></a>
-                            <a href={`mailto:${email}`} alt='Gmail'><Gmail /></a>
+                            <a href={github} alt='GitHub'><FaGithubSquare size={50} color="#181717"  /></a>
+                            <a href={linkedin} alt='LinkedIn'><FaLinkedin size={50} color="#0077B5" /></a>
+                            <a href={`https://wa.me/${phone}`} alt='WhatsApp'><FaWhatsappSquare size={50} color="#25D366" /></a>
+                            <a href={`mailto:${email}`} alt='Gmail'><SiGmail size={50} color="#EA4335" /></a>
                         </div>
                     </div>
                 </div>
@@ -45,14 +49,14 @@ export default function Presentation() {
             <div className="foo">
                 <h3>Experience with</h3>
                 <div className="techStack">
-                    <FaPython size={50} />
-                    <FaNodeJs size={50} />
-                    <FaReact size={50} />
-                    <FaDocker size={50} />
-                    <SiKubernetes size={50} />
-                    <SiTerraform size={50} />
-                    <FaGoogle size={50} />
-                    <FaAws size={50} />
+                    <FaPython size={50} color="#3776AB" />
+                    <FaNodeJs size={50} color="#339933" />
+                    <FaReact size={50} color="#61DAFB" />
+                    <FaDocker size={50} color="#2496ED" />
+                    <SiKubernetes size={50} color="#326CE5" />
+                    <SiTerraform size={50} color="#623CE4" />
+                    <FaGoogle size={50} color="#EA4335" />
+                    <FaAws size={50} color="#FF9900" />
                 </div>
             </div>
         </div>

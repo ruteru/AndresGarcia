@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Backend from '../../../assets/img/service/Backend.png';
-import Frontend from '../../../assets/img/service/Frontend.png';
-import Fullstack from '../../../assets/img/service/Fullstack.png';
-import Ai from '../../../assets/img/service/IA.png';
+import Backend from '../../../assets/img/service/python.webp';
+import Frontend from '../../../assets/img/service/frontend.webp';
+import Fullstack from '../../../assets/img/service/backend.webp';
+import SysAdmin from '../../../assets/img/service/datacenter.webp';
 import './servicesStyles.css';
 import './animationsStyles.css'
 
@@ -36,12 +36,13 @@ export default function SectionsServices() {
                 isExpanded={expandedSection === 'Fullstack'}
                 onLearnMoreClick={() => handleSectionClick('Fullstack')}
             />
+
             <ServiceColumn
-                image={Ai}
-                title="Machine Learning"
-                description="Ai, ML-Ops and features for your project"
-                isExpanded={expandedSection === 'Machine Learning'}
-                onLearnMoreClick={() => handleSectionClick('Machine Learning')}
+                image={SysAdmin}
+                title="SysAdmin"
+                description="Big Data, Infrastructure as Code, GitOps, System Optimization, Security Compliance"
+                isExpanded={expandedSection === 'SysAdmin'}
+                onLearnMoreClick={() => handleSectionClick('SysAdmin')}
             />
         </div>
     );
@@ -160,7 +161,7 @@ function ServiceColumn({ image, title, description, isExpanded, onLearnMoreClick
                         </ul>
                     </div>
                 );
-            case "Machine Learning":
+            case "SysAdmin":
                 return (
                     <div className="hiddenContent">
                         <h1>Machine Learning Services</h1>
@@ -174,7 +175,7 @@ function ServiceColumn({ image, title, description, isExpanded, onLearnMoreClick
     return (
         <div className={`sectionColumn ${isExpanded ? 'expanded' : ''}`}>
             <div className="originalContent">
-                <img src={image} alt={title} />
+                <img src={image} alt={title}  className="portrait" />
                 <h2 className="titleF">{title}</h2>
                 <p className="sentenceF">{description}</p>
                 <div className="discoverButtons">
