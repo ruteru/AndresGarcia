@@ -164,8 +164,13 @@ function ServiceColumn({ image, title, description, isExpanded, onLearnMoreClick
             case "SysAdmin":
                 return (
                     <div className="hiddenContent">
-                        <h1>Machine Learning Services</h1>
-                        <p>Detail about Machine Learning services...</p>
+                        <h1>SysAdmin and SysOps Services</h1>
+                        <p>I am a skilled SysAdmin with over 2 years of experience in Infrastructure as Code (IaC)
+                            and Cloud DevOps, and over 4 years of experience in fullstack development. I specialize
+                            in Python and Node, and have extensive expertise in managing Docker, Kubernetes, AWS,
+                            Google Cloud, and Terraform environments. I am proficient in automating and optimizing
+                            infrastructure, ensuring high availability, performance, and security.
+                        </p>
                     </div>
                 );
             default:
@@ -175,7 +180,7 @@ function ServiceColumn({ image, title, description, isExpanded, onLearnMoreClick
     return (
         <div className={`sectionColumn ${isExpanded ? 'expanded' : ''}`}>
             <div className="originalContent">
-                <img src={image} alt={title}  className="portrait" />
+                <img src={image} alt={title} className="portrait" />
                 <h2 className="titleF">{title}</h2>
                 <p className="sentenceF">{description}</p>
                 <div className="discoverButtons">
