@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './prices.css';
 import { LiaBugSolid } from "react-icons/lia";
+import { SiCreatereactapp } from "react-icons/si";
+import { TbSeo, TbNetwork } from "react-icons/tb";
+import { FaNetworkWired } from "react-icons/fa";
 
 const BinanceAPI = {
     EURUSDT: 'https://api.binance.com/api/v3/ticker/price?symbol=EURUSDT',
@@ -78,28 +81,28 @@ export default function Prices() {
                     title='Create React Component'
                     price={convertPrice(8)}
                     currencySymbol={currencySymbol}
-                    image={<LiaBugSolid size={40} />}
+                    image={<SiCreatereactapp size={40} />}
                 />
 
                 <ItemsPrice
                     title='SEO Improvement'
                     price={convertPrice(7)}
                     currencySymbol={currencySymbol}
-                    image={<LiaBugSolid size={40} />}
+                    image={<TbSeo size={40} />}
                 />
                 
                 <ItemsPrice
                     title='API CRUD'
                     price={convertPrice(10)}
                     currencySymbol={currencySymbol}
-                    image={<LiaBugSolid size={40} />}
+                    image={<TbNetwork size={40} />}
                 />
 
                 <ItemsPrice
                     title='API Design and Management'
                     price={convertPrice(8)}
                     currencySymbol={currencySymbol}
-                    image={<LiaBugSolid size={40} />}
+                    image={<FaNetworkWired size={40} />}
                 />
             </div>
         </div>
