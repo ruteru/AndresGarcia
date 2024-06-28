@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { ContentContext } from "../../Context/ContentContext";
 import { useNavigate } from 'react-router-dom';
 import './header.css';
@@ -20,29 +20,9 @@ export default function Header() {
         setMenuOpen(!menuOpen);
     };
 
-    useEffect(() => {
-        const link = document.createElement('link');
-        link.href = "https://assets.calendly.com/assets/external/widget.css";
-        link.rel = "stylesheet";
-        document.head.appendChild(link);
-
-        const script = document.createElement('script');
-        script.src = "https://assets.calendly.com/assets/external/widget.js";
-        script.async = true;
-        script.onload = () => {
-            console.log('Calendly script loaded');
-        };
-        document.head.appendChild(script);
-    }, []);
-
     const handleBookCall = (e) => {
         e.preventDefault();
-        if (window.Calendly) {
-            window.Calendly.initPopupWidget({ url: 'https://calendly.com/andresgarcia_dev/30min' });
-        } else {
-            console.error('Calendly is not loaded yet');
-        }
-        return false;
+        window.location.href = 'https://calendly.com/andresgarcia_dev/30min';
     };
 
     const handleNavigation = (page, path) => {
