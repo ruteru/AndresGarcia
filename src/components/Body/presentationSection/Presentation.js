@@ -48,7 +48,6 @@ export default function Presentation() {
                     <FaPython size={50} />
                     <FaNodeJs size={50} />
                     <FaReact size={50} />
-                    <BiLogoGoLang size={50} />
                     <SiTerraform size={50} />
                     <FaGoogle size={50} />
                     <FaAws size={50} />
