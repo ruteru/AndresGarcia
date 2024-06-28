@@ -1,7 +1,6 @@
 import React from "react";
 import './presentation.css'
 import Profile from '../../../assets/img/profile.webp';
-import Gmail from '../../../assets/svg/Gmail';
 import Resume from '../../../data/resume.json'
 import {
     FaPython,
