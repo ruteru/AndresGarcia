@@ -69,21 +69,35 @@ export default function Prices() {
             <div className='itemContainer'>
                 <ItemsPrice
                     title='Fix Bug'
-                    price={convertPrice(10.50)}
+                    price={convertPrice(10)}
                     currencySymbol={currencySymbol}
                     image={<LiaBugSolid size={40} />}
                 />
 
                 <ItemsPrice
-                    title='Create Logo'
-                    price={convertPrice(8.99)}
+                    title='Create React Component'
+                    price={convertPrice(8)}
                     currencySymbol={currencySymbol}
                     image={<LiaBugSolid size={40} />}
                 />
 
                 <ItemsPrice
-                    title='Clone Page'
-                    price={convertPrice(50)}
+                    title='SEO Improvement'
+                    price={convertPrice(7)}
+                    currencySymbol={currencySymbol}
+                    image={<LiaBugSolid size={40} />}
+                />
+                
+                <ItemsPrice
+                    title='API CRUD'
+                    price={convertPrice(10)}
+                    currencySymbol={currencySymbol}
+                    image={<LiaBugSolid size={40} />}
+                />
+
+                <ItemsPrice
+                    title='API Design and Management'
+                    price={convertPrice(8)}
                     currencySymbol={currencySymbol}
                     image={<LiaBugSolid size={40} />}
                 />
