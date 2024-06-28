@@ -13,6 +13,10 @@ export default function SectionsServices() {
         setExpandedSection(expandedSection === section ? null : section);
     };
 
+    const redirectLink = (url) => {
+        window.open(url, '_blank');
+    };
+
     return (
         <div className="servicesContainer">
             <ServiceColumn
@@ -21,6 +25,7 @@ export default function SectionsServices() {
                 description="Python, Databases and DevOps development for your team"
                 isExpanded={expandedSection === 'Backend'}
                 onLearnMoreClick={() => handleSectionClick('Backend')}
+                hireButton={() => redirectLink('https://contra.com/s/YUQscB2M-backend-development-pythonnode')}
             />
             <ServiceColumn
                 image={Frontend}
@@ -28,6 +33,7 @@ export default function SectionsServices() {
                 description="Website and Mobile experiences for your users"
                 isExpanded={expandedSection === 'Frontend'}
                 onLearnMoreClick={() => handleSectionClick('Frontend')}
+                hireButton={() => redirectLink('https://example.com')}
             />
             <ServiceColumn
                 image={Fullstack}
@@ -35,6 +41,7 @@ export default function SectionsServices() {
                 description="Combine the technologies you need"
                 isExpanded={expandedSection === 'Fullstack'}
                 onLearnMoreClick={() => handleSectionClick('Fullstack')}
+                hireButton={() => redirectLink('https://example.com')}
             />
 
             <ServiceColumn
@@ -43,12 +50,13 @@ export default function SectionsServices() {
                 description="Big Data, Infrastructure as Code, GitOps, System Optimization, Security Compliance"
                 isExpanded={expandedSection === 'SysAdmin'}
                 onLearnMoreClick={() => handleSectionClick('SysAdmin')}
+                hireButton={() => redirectLink('https://example.com')}
             />
         </div>
     );
 }
 
-function ServiceColumn({ image, title, description, isExpanded, onLearnMoreClick }) {
+function ServiceColumn({ image, title, description, isExpanded, onLearnMoreClick, hireButton }) {
     const renderHiddenContent = () => {
         switch (title) {
             case "Backend":
@@ -185,7 +193,7 @@ function ServiceColumn({ image, title, description, isExpanded, onLearnMoreClick
                 <p className="sentenceF">{description}</p>
                 <div className="discoverButtons">
                     <button className="descriptionF" onClick={onLearnMoreClick}>Learn More</button>
-                    <button className="descriptionF">Hire Me</button>
+                    <button className="descriptionF" onClick={hireButton}>Hire Me</button>
                 </div>
             </div>
             {isExpanded && renderHiddenContent()}
