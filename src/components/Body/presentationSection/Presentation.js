@@ -12,9 +12,9 @@ import {
     FaAws,
     FaNodeJs,
     FaReact,
+    FaDocker,
 } from 'react-icons/fa';
-import { BiLogoGoLang } from "react-icons/bi";
-import { SiTerraform } from "react-icons/si";
+import { SiTerraform, SiKubernetes  } from "react-icons/si";
 
 export default function Presentation() {
     const { name, phone, email, location, sumary, github, linkedin } = Resume;
@@ -48,6 +48,8 @@ export default function Presentation() {
                     <FaPython size={50} />
                     <FaNodeJs size={50} />
                     <FaReact size={50} />
+                    <FaDocker size={50} />
+                    <SiKubernetes size={50} />
                     <SiTerraform size={50} />
                     <FaGoogle size={50} />
                     <FaAws size={50} />

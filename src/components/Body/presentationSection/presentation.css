@@ -23,7 +23,7 @@
     align-items: center;
     flex-direction: column;
     height: fit-content;
-    bottom: 8vh;
+    bottom: 3vh;
 }
 
 .techStack {
@@ -89,6 +89,7 @@
     text-align: justify;
     margin-top: 5vh;
     width: 100%;
+    height: auto;
 }
 
 .social {
