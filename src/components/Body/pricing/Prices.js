@@ -53,6 +53,8 @@ export default function Prices() {
         }
     };
 
+    const currencySymbol = selectedCurrency === 'EUR' ? '€' : selectedCurrency === 'USD' ? '$' : 'ARS';
+
     return (
         <div className='PricesContainer'>
             <div className='currencySelector'>
@@ -68,21 +70,21 @@ export default function Prices() {
                 <ItemsPrice
                     title='Fix Bug'
                     price={convertPrice(10.50)}
-                    currencySymbol={selectedCurrency === 'EUR' ? '€' : selectedCurrency === 'USD' ? '$' : 'ARS'}
+                    currencySymbol={currencySymbol}
                     image={<LiaBugSolid size={40} />}
                 />
 
                 <ItemsPrice
                     title='Create Logo'
                     price={convertPrice(8.99)}
-                    currencySymbol={selectedCurrency === 'EUR' ? '€' : selectedCurrency === 'USD' ? '$' : 'ARS'}
+                    currencySymbol={currencySymbol}
                     image={<LiaBugSolid size={40} />}
                 />
 
                 <ItemsPrice
                     title='Clone Page'
                     price={convertPrice(50)}
-                    currencySymbol={selectedCurrency === 'EUR' ? '€' : selectedCurrency === 'USD' ? '$' : 'ARS'}
+                    currencySymbol={currencySymbol}
                     image={<LiaBugSolid size={40} />}
                 />
             </div>
@@ -93,7 +95,7 @@ export default function Prices() {
 function ItemsPrice({ image, title, price, currencySymbol }) {
     
     return (
-        <div className='itemsContainer'>
+        <div className='serviceContainer'>
             <div>{image}</div>
             <h3>{title}</h3>
             <div className='priceContainer'>
