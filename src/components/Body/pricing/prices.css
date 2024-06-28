@@ -1,0 +1,44 @@
+.PricesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+    height: 76vh;
+    width: 200vh;
+    gap: 4vh;
+    padding: 1vh;
+}
+
+.currencySelector {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 2vh;
+    margin-right: 6vh;
+}
+
+.itemContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.itemsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh;
+    width: calc(15%);
+    height: auto;
+    margin: 1vh;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 3px #171515;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+
