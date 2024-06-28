@@ -4,7 +4,6 @@ import Profile from '../../../assets/img/profile.webp';
 import Resume from '../../../data/resume.json'
 import {
     FaPython,
-    FaGoogle,
     FaAws,
     FaNodeJs,
     FaReact,
@@ -13,6 +12,7 @@ import {
     FaLinkedin, 
     FaGithubSquare,
 } from 'react-icons/fa';
+import { FcGoogle } from "react-icons/fc";
 import { 
     SiTerraform, 
     SiKubernetes,
@@ -54,7 +54,7 @@ export default function Presentation() {
                     <FaDocker size={50} color="#2496ED" />
                     <SiKubernetes size={50} color="#326CE5" />
                     <SiTerraform size={50} color="#623CE4" />
-                    <FaGoogle size={50} color="#EA4335" />
+                    <FcGoogle size={50}  />
                     <FaAws size={50} color="#FF9900" />
                 </div>
             </div>
